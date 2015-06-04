@@ -6,31 +6,81 @@
 		<title>Flex Grid Framework</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
 
-		<div class="demo-col-container">
-			<div class="demo-col-12">
-				<h1>Flex Grid Framework</h1>
+		<!-- header 
+		================================================== -->
+		<header class="header">
+
+				<h1 class="title-lv1">Flex Grid Framework</h1>
+				<h2 class="title-lv2">Why <a href="http://www.w3.org/TR/css3-flexbox/" target="_blank" class="link-magenta">flexbox</a> and mathematics are fun</h2>
+
+				<a href="#download" class="btn">Download</a>
+
+				<p class="note">
+					<strong>Note:</strong> ???? <a href="#" class="link-magenta">contribute</a> :D
+				</p>
+
+		</header>
+
+		<!-- Baby Steps 
+		================================================== -->
+			<div class="title-container">
+				<h3 class="title-lv3">Baby Steps</h3>
 			</div>
+			
+			<div class="code">
+				
+<pre class="pre">
+<code>
+@import <span class="featured">"flexgridsystem"</span>
+</code>
+</pre>
+
+<pre class="pre">
+<code>
+.container
+  <span class="featured">row()</span>
+
+.yellow-bar-6 
+  <span class="featured">col(6)</span>
+
+.yellow-bar-6
+  <span class="featured">col(6)</span>
+
+</code>
+</pre>
+
+			</div> <!-- / code -->
+
+		<div class="demo-row">
+
+			<div class="yellow-bar-6"></div>
+			<div class="yellow-bar-6"></div>
+	
 		</div>
 
-		<div class="demo-col-container">
-			<div class="demo-col-1">col(1)</div>
-			<div class="demo-col-11">col(11)</div>
-			<div class="demo-col-2">col(3)</div>
-			<div class="demo-col-10">col(10)</div>
-			<div class="demo-col-3">col(3)</div>
-			<div class="demo-col-9">col(9)</div>
-			<div class="demo-col-4">col(4)</div>
-			<div class="demo-col-8">col(8)</div>
-			<div class="demo-col-5">col(5)</div>
-			<div class="demo-col-7">col(7)</div>
-			<div class="demo-col-6">col(6)</div>
-			<div class="demo-col-6">col(6)</div>
-			<div class="demo-col-12">col(12)</div>
-		</div>
+
+		<!-- Footer
+		================================================== -->
+		<footer class="footer-container">
+
+			<div class="footer">
+			
+				<div class="footer-left">
+					<a href="#afonsopacifer" class="link-white">by Afonso Pacifer</a>
+				</div>
+
+				<div class="footer-right">
+					<a href="#mit-licence" class="link-white">MIT Licence</a>
+				</div>
+
+			</div>
+
+		</footer>
 
 	</body>
 

@@ -1,7 +1,92 @@
 * {
   box-sizing: border-box;
 }
-.demo-col-container {
+/* Colors
+_____________________________________________________ */
+/* Mixins
+_____________________________________________________ */
+/* _____________________________________________________ */
+body {
+  background-color: #441255;
+  font-family: 'Open Sans', sans-serif;
+}
+/* header
+_____________________________________________________ */
+.header {
+  color: #fff;
+  text-align: center;
+  width: 98.95949999999999%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
+}
+/* Note
+_____________________________________________________ */
+.note {
+  background-color: #f7cb34;
+  color: #000;
+  padding: 10px 15px;
+  margin: 0 auto;
+  display: block;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
+  box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
+  width: 100%;
+  max-width: 600px;
+}
+/* title container
+_____________________________________________________ */
+.title-container {
+  width: 98.95949999999999%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
+  text-align: center;
+}
+/* headers
+_____________________________________________________ */
+.title-lv1 {
+  font-size: 48px;
+}
+.title-lv2 {
+  font-size: 30px;
+}
+.title-lv3 {
+  font-size: 30px;
+  color: #fff;
+}
+.title-lv4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+/* Links and Btns
+_____________________________________________________ */
+.link-magenta {
+  color: #e22b4b;
+  text-decoration: none;
+}
+.link-magenta:hover {
+  color: #82212b;
+}
+.link-white {
+  color: #fff;
+  text-decoration: none;
+}
+.link-white:hover {
+  color: #82212b;
+}
+.btn {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #e22b4b;
+  margin: 30px 0 45px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #82212b;
+}
+/* rows
+_____________________________________________________ */
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -14,70 +99,166 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.demo-col-container div {
-  border: 1px solid #000;
+.demo-row {
+  background-color: #e22b4b;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
+  box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* Code block
+_____________________________________________________ */
+.code {
+  width: 65.62577999999999%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
+  margin-left: 17.18769%;
+}
+.code .pre {
+  background-color: #03001c;
+  color: #1fb8c0;
+  padding-left: 10px;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
+  box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
+}
+.featured {
+  color: #fe9600;
+}
+/* Yellow bars
+_____________________________________________________ */
+.yellow-bar-1 {
+  background-color: #f7cb34;
   margin-top: 5px;
   margin-bottom: 5px;
-  padding: 10px 0;
-  text-align: center;
-}
-.demo-col-1 {
+  height: 30px;
   width: 7.29177%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
 }
-.demo-col-2 {
+.yellow-bar-2 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
   width: 15.6252%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
 }
-.demo-col-3 {
+.yellow-bar-3 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
   width: 23.95863%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
 }
-.demo-col-4 {
+.yellow-bar-4 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
   width: 32.29206%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
 }
-.demo-col-5 {
+.yellow-bar-5 {
   width: 40.62549%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
 }
-.demo-col-6 {
+.yellow-bar-6 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
   width: 48.95892%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
 }
-.demo-col-7 {
-  width: 57.29235%;
+.yellow-bar-7 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+}
+.yellow-bar-8 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+}
+.yellow-bar-9 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+}
+.yellow-bar-10 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+}
+.yellow-bar-11 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+}
+.yellow-bar-12 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+}
+.big {
+  height: 90px;
+}
+/* Footer
+_____________________________________________________ */
+.footer-container {
+  background-color: #e22b4b;
+  padding: 10px 0;
+  margin-top: 80px;
+  width: 100%;
+}
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.footer-left {
+  text-align: left;
+  width: 48.95892%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
 }
-.demo-col-8 {
-  width: 65.62577999999999%;
-  margin-right: 0.52083%;
-  margin-left: 0.52083%;
-}
-.demo-col-9 {
-  width: 73.95921%;
-  margin-right: 0.52083%;
-  margin-left: 0.52083%;
-}
-.demo-col-10 {
-  width: 82.29263999999999%;
-  margin-right: 0.52083%;
-  margin-left: 0.52083%;
-}
-.demo-col-11 {
-  width: 90.62607%;
-  margin-right: 0.52083%;
-  margin-left: 0.52083%;
-}
-.demo-col-12 {
-  width: 98.95949999999999%;
+.footer-right {
+  text-align: right;
+  width: 48.95892%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
 }
