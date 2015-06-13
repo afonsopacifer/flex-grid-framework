@@ -4,7 +4,7 @@
 
 ##Install
 
-[Download](https://github.com/afonsopacifer/flex-grid-framework/archive/master.zip) and import the flex-grid-framework.styl in your stylus file.
+[Download](https://github.com/afonsopacifer/flex-grid-framework/archive/0.1.0.zip) and import the flex-grid-framework.styl in your stylus file.
 
 ##Docs
 See in the [framework website](afonsopacifer.github.io/flex-grid-framework).

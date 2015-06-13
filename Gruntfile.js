@@ -40,6 +40,14 @@ module.exports = function( grunt ) {
       }
     },
 
+    //Deploy the production files for gh-pages
+    'gh-pages': {
+      options: {
+        base: 'site/'
+      },
+      src: ['**']
+    },
+
     // connect
     connect: {
 
@@ -61,7 +69,9 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   // tasks
   grunt.registerTask( 'default', ['connect','watch']);
+  grunt.registerTask( 'deploy', ['gh-pages']);
 };

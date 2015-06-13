@@ -8,6 +8,7 @@
     "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-stylus": "^0.20.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-gh-pages": "^0.10.0",
     "stylus": "^0.50.0"
   }
 }
