@@ -1,7 +1,7 @@
 {
   "name": "flex-grid-framework",
   "author": "Afonso Pacifer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A grid based on flexbox",
   "devDependencies": {
     "grunt": "^0.4.5",
