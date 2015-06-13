@@ -29,6 +29,11 @@ body
 	background-color purple
 	font-family 'Open Sans', sans-serif
 
+.fork-me
+	position fixed
+	top 0
+	right 0
+
 /* header
 _____________________________________________________ */
 .header
@@ -67,9 +72,10 @@ _____________________________________________________ */
 	color #fff
 
 .title-lv4
-	font-size 24px
-	font-weight 300
+	font-size 20px
 	color #fff
+	font-style oblique
+	font-weight 700
 
 .yellow
 	color yellow
@@ -210,6 +216,23 @@ _____________________________________________________ */
 .yellow-bar-12
 	yellow-bar()
 	col(12)
+
+.yellow-bar-x
+	yellow-bar()
+	col(3)
+	offset(3)
+
+.yellow-bar-y
+	yellow-bar()
+	col(6)
+
+@media (max-width 800px)
+	.yellow-bar-x
+		col(12)
+		offset(0)
+
+	.yellow-bar-y
+		col(12)
 
 .offset-6
 	offset(6)

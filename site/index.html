@@ -4,12 +4,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Flex Grid Framework</title>
+		<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
+
+		<a href="https://github.com/afonsopacifer/flex-grid-framework" target="_blank">
+			<img src="assets/img/github.png" class="fork-me">
+		</a>
 
 		<!-- header
 		================================================== -->
@@ -394,6 +399,44 @@
 		<div class="demo-row v-align-bottom">
 			<div class="yellow-bar-6 big"></div>
 			<div class="yellow-bar-6"></div>
+		</div>
+
+		<!-- Breakpoints
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv3 yellow">Custom <span class="magenta">breakpoint</span></h4>
+			<h3 class="title-lv4">resize your window for view the changes</h3>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+
+.example-x
+  col(3)
+  offset(3)
+
+.example-y
+  col(12)
+
+<span class="featured">@media (max-width 800px)</span>
+  .example-x
+    col(12)
+    offset(0)
+
+  .example-y
+    col(12)
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row">
+			<div class="yellow-bar-x"></div>
+			<div class="yellow-bar-y"></div>
 		</div>
 
 		<!-- Support

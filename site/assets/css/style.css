@@ -10,6 +10,11 @@ body {
   background-color: #441255;
   font-family: 'Open Sans', sans-serif;
 }
+.fork-me {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
 /* header
 _____________________________________________________ */
 .header {
@@ -54,9 +59,10 @@ _____________________________________________________ */
   color: #fff;
 }
 .title-lv4 {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 20px;
   color: #fff;
+  font-style: oblique;
+  font-weight: 700;
 }
 .yellow {
   color: #f7cb34;
@@ -306,6 +312,38 @@ _____________________________________________________ */
   width: 98.95949999999999%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
+}
+.yellow-bar-x {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+  width: 23.95863%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
+  margin-left: 25.52112%;
+}
+.yellow-bar-y {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+  width: 48.95892%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
+}
+@media (max-width: 800px) {
+  .yellow-bar-x {
+    width: 98.95949999999999%;
+    margin-right: 0.52083%;
+    margin-left: 0.52083%;
+    margin-left: 0.52083%;
+  }
+  .yellow-bar-y {
+    width: 98.95949999999999%;
+    margin-right: 0.52083%;
+    margin-left: 0.52083%;
+  }
 }
 .offset-6 {
   margin-left: 50.521409999999996%;
