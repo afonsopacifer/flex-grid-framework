@@ -1,0 +1,263 @@
+@import "../../../flex-grid-framework"
+
+/* Colors
+_____________________________________________________ */
+purple = #441255
+magenta = #e22b4b
+magenta-dark = #82212b
+yellow = #f7cb34
+blue = #1fb8c0
+code-background = #03001c
+pumpkin = #fe9600
+
+/* Mixins
+_____________________________________________________ */
+shadow()
+	-webkit-box-shadow 3px 3px 3px 0px rgba(50, 50, 50, 0.77)
+	-moz-box-shadow 3px 3px 3px 0px rgba(50, 50, 50, 0.77)
+	box-shadow 3px 3px 3px 0px rgba(50, 50, 50, 0.77)
+
+yellow-bar()
+	background-color yellow
+	margin-top 5px
+	margin-bottom 5px
+	height 30px
+
+/* _____________________________________________________ */
+
+body
+	background-color purple
+	font-family 'Open Sans', sans-serif
+
+.fork-me
+	position fixed
+	top 0
+	right 0
+
+/* header
+_____________________________________________________ */
+.header
+	color #fff
+	text-align center
+	col(12)
+
+/* Note
+_____________________________________________________ */
+.note
+	background-color yellow
+	color #000
+	padding 10px 15px
+	margin 0 auto
+	display block
+	shadow()
+	width 100%
+	max-width 610px
+
+/* title container
+_____________________________________________________ */
+.title-container
+	col(12)
+	text-align center
+
+/* headers
+_____________________________________________________ */
+.title-lv1
+	font-size 48px
+
+.title-lv2
+	font-size 30px
+
+.title-lv3
+	font-size 30px
+	color #fff
+
+.title-lv4
+	font-size 20px
+	color #fff
+	font-style oblique
+	font-weight 700
+
+.yellow
+	color yellow
+
+.magenta
+	color magenta
+/* Other texts
+_____________________________________________________ */
+.standard-paragraph
+	color #fff
+
+/* Links and Btns
+_____________________________________________________ */
+.link-magenta
+	color magenta
+	text-decoration none
+
+.link-magenta:hover
+	color magenta-dark
+
+.link-white
+	color #fff
+	text-decoration none
+
+.link-white:hover
+	color magenta-dark
+
+.btn
+	padding 10px 30px
+	color #fff
+	background-color magenta
+	margin 30px 0 45px 0
+	display inline-block
+	text-decoration none
+
+.btn:hover
+	background-color magenta-dark
+
+/* rows
+_____________________________________________________ */
+.container
+	row()
+
+
+.demo-row
+	background-color magenta
+	padding 10px 0
+	margin-top 10px
+	margin-bottom  50px
+	shadow()
+	row()
+
+.c-align-left
+	content-align(left)
+
+.c-align-right
+	content-align(right)
+
+.c-align-center
+	content-align(center)
+
+.c-align-between
+	content-align(between)
+
+.c-align-around
+	content-align(around)
+
+.v-align-top
+	vertical-align(top)
+
+.v-align-middle
+	vertical-align(middle)
+
+.v-align-bottom
+	vertical-align(bottom)
+/* Code block
+_____________________________________________________ */
+
+.code
+	col(8)
+	offset(2)
+
+.code .pre
+	background-color code-background
+	color blue
+	padding-left 10px
+	shadow()
+
+.featured
+	color pumpkin
+
+/* Yellow bars
+_____________________________________________________ */
+.yellow-bar-1
+	yellow-bar()
+	col(1)
+
+.yellow-bar-2
+	yellow-bar()
+	col(2)
+
+.yellow-bar-3
+	yellow-bar()
+	col(3)
+
+.yellow-bar-4
+	yellow-bar()
+	col(4)
+
+.yellow-bar-5
+	yellow-bar()
+	col(5)
+
+.yellow-bar-6
+	yellow-bar()
+	col(6)
+
+.yellow-bar-7
+	yellow-bar()
+	col(7)
+
+.yellow-bar-8
+	yellow-bar()
+	col(8)
+
+.yellow-bar-9
+	yellow-bar()
+	col(9)
+
+.yellow-bar-10
+	yellow-bar()
+	col(10)
+
+.yellow-bar-11
+	yellow-bar()
+	col(11)
+
+.yellow-bar-12
+	yellow-bar()
+	col(12)
+
+.yellow-bar-x
+	yellow-bar()
+	col(3)
+	offset(3)
+
+.yellow-bar-y
+	yellow-bar()
+	col(6)
+
+@media (max-width 811px)
+	.yellow-bar-x
+		col(12)
+		offset(0)
+
+	.yellow-bar-y
+		col(12)
+
+.offset-6
+	offset(6)
+
+.offset-7
+	offset(7)
+
+.big
+	height 90px
+
+/* Footer
+_____________________________________________________ */
+.footer-container
+	background-color magenta
+	padding 10px 0
+	margin-top 80px
+	width 100%
+
+.footer
+	row()
+
+.footer-left
+	text-align left
+	col(6)
+
+.footer-right
+	text-align right
+	col(6)
