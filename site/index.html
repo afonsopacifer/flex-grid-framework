@@ -11,44 +11,70 @@
 
 	<body>
 
-		<!-- header 
+		<!-- header
 		================================================== -->
 		<header class="header">
 
 				<h1 class="title-lv1">Flex Grid Framework</h1>
-				<h2 class="title-lv2">Why <a href="http://www.w3.org/TR/css3-flexbox/" target="_blank" class="link-magenta">flexbox</a> and mathematics are fun</h2>
+				<h2 class="title-lv2">Because <a href="http://www.w3.org/TR/css3-flexbox/" target="_blank" class="link-magenta">flexbox</a> and mathematics are fun :D</h2>
 
-				<a href="#download" class="btn">Download</a>
+				<a href="#demo" class="btn">View a demo</a>
+				<a href="https://github.com/afonsopacifer/flex-grid-framework/archive/master.zip" class="btn">Download V 0.1.0</a>
 
 				<p class="note">
-					<strong>Note:</strong> ???? <a href="#" class="link-magenta">contribute</a> :D
+					<strong>Note:</strong>
+					To use the framework, you'll need to compile your style
+					with the Stylus preprocessor using NodeJS,
+					for more information see <a href="https://nodejs.org/" target="_blank" class="link-magenta"><strong>NodeJS</strong></a> and <a href="https://learnboost.github.io/stylus/" target="_blank" class="link-magenta"><strong>Stylus</strong></a>.
 				</p>
 
 		</header>
 
-		<!-- Baby Steps 
-		================================================== -->
+			<!-- The basics
+			================================================== -->
+
 			<div class="title-container">
-				<h3 class="title-lv3">Baby Steps</h3>
+				<h3 class="title-lv3">The basics</h3>
+				<h4 class="title-lv4">Create you markup</h4>
 			</div>
-			
+
 			<div class="code">
-				
+
 <pre class="pre">
 <code>
-@import <span class="featured">"flexgridsystem"</span>
+&lt;div class="<span class="featured">container</span>">
+  &lt;div class="<span class="featured">yellow-bar</span>">&lt;/div>
+  &lt;div class="<span class="featured">yellow-bar</span>">&lt;/div>
+&lt;/div>
 </code>
 </pre>
+			</div>
 
+			<div class="title-container">
+				<h4 class="title-lv4">Import the framework</h4>
+			</div>
+
+			<div class="code">
+<pre class="pre">
+<code>
+@import <span class="featured">"flexgridframework"</span>
+</code>
+</pre>
+			</div>
+			<div class="title-container">
+				<h4 class="title-lv4">Set your rows and columns</h4>
+			</div>
+
+			<div class="code">
 <pre class="pre">
 <code>
 .container
   <span class="featured">row()</span>
 
-.yellow-bar-6 
+.yellow-bar
   <span class="featured">col(6)</span>
 
-.yellow-bar-6
+.yellow-bar
   <span class="featured">col(6)</span>
 
 </code>
@@ -60,22 +86,328 @@
 
 			<div class="yellow-bar-6"></div>
 			<div class="yellow-bar-6"></div>
-	
+
 		</div>
 
+
+		<!-- Item features - cols
+		================================================== -->
+		<div class="title-container">
+			<h3 class="title-lv3"><span class="yellow">Items</span> features</h3>
+			<h4 class="title-lv4 yellow">Choose your combination between 12 responsive columns</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+
+.container
+  row()
+
+.example-1
+  <span class="featured">col(1)</span>
+
+.example-11
+  <span class="featured">col(11)</span>
+
+.example-5
+  <span class="featured">col(5)</span>
+
+.example-7
+  <span class="featured">col(7)</span>
+
+.example-12
+  <span class="featured">col(12)</span>
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row">
+
+			<div class="yellow-bar-1"></div>
+			<div class="yellow-bar-11"></div>
+			<div class="yellow-bar-5"></div>
+			<div class="yellow-bar-7"></div>
+			<div class="yellow-bar-12"></div>
+
+		</div>
+
+		<!-- Item features - offset
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4 yellow">Offsetting columns</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+
+.example-1
+  col(1)
+
+.example-5
+  col(5)
+  <span class="featured">offset(6)</span>
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row">
+
+			<div class="yellow-bar-1"></div>
+			<div class="yellow-bar-5 offset-6"></div>
+
+		</div>
+
+		<!-- Container features - side
+		================================================== -->
+		<div class="title-container">
+			<h3 class="title-lv3"><span class="magenta">Container</span> features</h3>
+			<h4 class="title-lv4 magenta">Choise your side</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+  <span class="featured">content-align(left)</span>
+
+.example-3
+  col(3)
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-left">
+			<div class="yellow-bar-3"></div>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+  <span class="featured">content-align(right)</span>
+
+.example-3
+  col(3)
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-right">
+			<div class="yellow-bar-3"></div>
+		</div>
+
+		<!-- Container features - Easily centralize
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4 magenta">Easily centralize</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+  <span class="featured">content-align(center)</span>
+
+.example-3
+  col(3)
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-center">
+			<div class="yellow-bar-3"></div>
+		</div>
+
+		<!-- Container features - Justify content: between
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4 magenta">Justify content: between</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+  <span class="featured">content-align(between)</span>
+
+.example-2
+  col(2)
+
+.example-2
+  col(2)
+
+.example-2
+  col(2)
+
+.example-2
+  col(2)
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-between">
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+		</div>
+
+		<!-- Container features - Justify content: around
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4 magenta">Justify content: around</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+  <span class="featured">content-align(around)</span>
+
+.example-2
+  col(2)
+
+.example-2
+  col(2)
+
+.example-2
+  col(2)
+
+.example-2
+  col(2)
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-around">
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+		</div>
+
+		<!-- Container features - Vertical align top
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4 magenta">Vertical align top</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+  <span class="featured">vertical-align(top)</span>
+
+.example-6-big
+  col(6)
+
+.example-6
+  col(6)
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row v-align-top">
+			<div class="yellow-bar-6 big"></div>
+			<div class="yellow-bar-6"></div>
+		</div>
+
+		<!-- Container features - Vertical align middle
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4 magenta">Vertical align middle</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+  <span class="featured">vertical-align(middle)</span>
+
+.example-6-big
+  col(6)
+
+.example-6
+  col(6)
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row v-align-middle">
+			<div class="yellow-bar-6 big"></div>
+			<div class="yellow-bar-6"></div>
+		</div>
+
+		<!-- Container features - Vertical align bottom
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4 magenta">Vertical align bottom</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  row()
+  <span class="featured">vertical-align(bottom)</span>
+
+.example-6-big
+  col(6)
+
+.example-6
+  col(6)
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row v-align-bottom">
+			<div class="yellow-bar-6 big"></div>
+			<div class="yellow-bar-6"></div>
+		</div>
 
 		<!-- Footer
 		================================================== -->
 		<footer class="footer-container">
 
 			<div class="footer">
-			
+
 				<div class="footer-left">
-					<a href="#afonsopacifer" class="link-white">by Afonso Pacifer</a>
+					<a href="https://github.com/afonsopacifer" target="_blank" class="link-white">Made with &#9829; by Afonso Pacifer</a>
 				</div>
 
 				<div class="footer-right">
-					<a href="#mit-licence" class="link-white">MIT Licence</a>
+					<a href="https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md" target="_blank" class="link-white">MIT Licence</a>
 				</div>
 
 			</div>

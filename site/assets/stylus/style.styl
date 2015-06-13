@@ -16,7 +16,7 @@ shadow()
 	-webkit-box-shadow 3px 3px 3px 0px rgba(50, 50, 50, 0.77)
 	-moz-box-shadow 3px 3px 3px 0px rgba(50, 50, 50, 0.77)
 	box-shadow 3px 3px 3px 0px rgba(50, 50, 50, 0.77)
-	
+
 yellow-bar()
 	background-color yellow
 	margin-top 5px
@@ -46,7 +46,7 @@ _____________________________________________________ */
 	display block
 	shadow()
 	width 100%
-	max-width 600px
+	max-width 610px
 
 /* title container
 _____________________________________________________ */
@@ -69,6 +69,17 @@ _____________________________________________________ */
 .title-lv4
 	font-size 24px
 	font-weight 300
+	color #fff
+
+.yellow
+	color yellow
+
+.magenta
+	color magenta
+/* Other texts
+_____________________________________________________ */
+.standard-paragraph
+	color #fff
 
 /* Links and Btns
 _____________________________________________________ */
@@ -96,12 +107,13 @@ _____________________________________________________ */
 
 .btn:hover
 	background-color magenta-dark
-	
+
 /* rows
 _____________________________________________________ */
-.container 
+.container
 	row()
-	
+
+
 .demo-row
 	background-color magenta
 	padding 10px 0
@@ -109,7 +121,30 @@ _____________________________________________________ */
 	margin-bottom  50px
 	shadow()
 	row()
-	
+
+.c-align-left
+	content-align(left)
+
+.c-align-right
+	content-align(right)
+
+.c-align-center
+	content-align(center)
+
+.c-align-between
+	content-align(between)
+
+.c-align-around
+	content-align(around)
+
+.v-align-top
+	vertical-align(top)
+
+.v-align-middle
+	vertical-align(middle)
+
+.v-align-bottom
+	vertical-align(bottom)
 /* Code block
 _____________________________________________________ */
 
@@ -145,8 +180,8 @@ _____________________________________________________ */
 	col(4)
 
 .yellow-bar-5
+	yellow-bar()
 	col(5)
-	col-5()
 
 .yellow-bar-6
 	yellow-bar()
@@ -154,27 +189,33 @@ _____________________________________________________ */
 
 .yellow-bar-7
 	yellow-bar()
-	col-7(7)
+	col(7)
 
 .yellow-bar-8
 	yellow-bar()
-	col-8(8)
+	col(8)
 
 .yellow-bar-9
 	yellow-bar()
-	col-9(9)
+	col(9)
 
 .yellow-bar-10
 	yellow-bar()
-	col-10(10)
+	col(10)
 
 .yellow-bar-11
 	yellow-bar()
-	col-11(11)
+	col(11)
 
 .yellow-bar-12
 	yellow-bar()
-	col-12(12)
+	col(12)
+
+.offset-6
+	offset(6)
+
+.offset-7
+	offset(7)
 
 .big
 	height 90px

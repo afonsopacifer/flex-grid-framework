@@ -31,7 +31,7 @@ _____________________________________________________ */
   -moz-box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
   box-shadow: 3px 3px 3px 0px rgba(50,50,50,0.77);
   width: 100%;
-  max-width: 600px;
+  max-width: 610px;
 }
 /* title container
 _____________________________________________________ */
@@ -56,6 +56,18 @@ _____________________________________________________ */
 .title-lv4 {
   font-size: 24px;
   font-weight: 300;
+  color: #fff;
+}
+.yellow {
+  color: #f7cb34;
+}
+.magenta {
+  color: #e22b4b;
+}
+/* Other texts
+_____________________________________________________ */
+.standard-paragraph {
+  color: #fff;
 }
 /* Links and Btns
 _____________________________________________________ */
@@ -119,6 +131,53 @@ _____________________________________________________ */
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.c-align-left {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.c-align-right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.c-align-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.c-align-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.c-align-around {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.v-align-top {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.v-align-middle {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.v-align-bottom {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
 /* Code block
 _____________________________________________________ */
 .code {
@@ -177,6 +236,10 @@ _____________________________________________________ */
   margin-left: 0.52083%;
 }
 .yellow-bar-5 {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
   width: 40.62549%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
@@ -195,36 +258,60 @@ _____________________________________________________ */
   margin-top: 5px;
   margin-bottom: 5px;
   height: 30px;
+  width: 57.29235%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
 }
 .yellow-bar-8 {
   background-color: #f7cb34;
   margin-top: 5px;
   margin-bottom: 5px;
   height: 30px;
+  width: 65.62577999999999%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
 }
 .yellow-bar-9 {
   background-color: #f7cb34;
   margin-top: 5px;
   margin-bottom: 5px;
   height: 30px;
+  width: 73.95921%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
 }
 .yellow-bar-10 {
   background-color: #f7cb34;
   margin-top: 5px;
   margin-bottom: 5px;
   height: 30px;
+  width: 82.29263999999999%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
 }
 .yellow-bar-11 {
   background-color: #f7cb34;
   margin-top: 5px;
   margin-bottom: 5px;
   height: 30px;
+  width: 90.62607%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
 }
 .yellow-bar-12 {
   background-color: #f7cb34;
   margin-top: 5px;
   margin-bottom: 5px;
   height: 30px;
+  width: 98.95949999999999%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
+}
+.offset-6 {
+  margin-left: 50.521409999999996%;
+}
+.offset-7 {
+  margin-left: 58.854839999999996%;
 }
 .big {
   height: 90px;
