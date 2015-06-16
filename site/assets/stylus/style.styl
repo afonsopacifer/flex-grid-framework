@@ -57,6 +57,11 @@ _____________________________________________________ */
 	width 100%
 	max-width 610px
 
+@media (max-width 610px)
+	.note
+		width 80%
+		margin 0 auto
+
 /* title container
 _____________________________________________________ */
 .title-container
@@ -75,6 +80,16 @@ _____________________________________________________ */
 .title-lv3
 	font-size 30px
 	color #fff
+
+@media (max-width 600px)
+	.title-lv1
+		font-size 38px
+
+	.title-lv2
+		font-size 25px
+
+	.title-lv3
+		font-size 25px
 
 .title-lv4
 	font-size 20px
@@ -116,6 +131,12 @@ _____________________________________________________ */
 	display inline-block
 	text-decoration none
 
+@media (max-width 610px)
+	.btn
+		display block
+		width 200px
+		margin 30px auto
+
 .btn:hover
 	background-color magenta-dark
 
@@ -123,7 +144,6 @@ _____________________________________________________ */
 _____________________________________________________ */
 .container
 	row()
-
 
 .demo-row
 	background-color magenta
@@ -162,6 +182,12 @@ _____________________________________________________ */
 .code
 	col(8)
 	offset(2)
+
+@media (max-width 600px)
+	.code
+		col(12)
+		offset(0)
+		padding 0 10px
 
 .code .pre
 	background-color code-background
@@ -266,3 +292,13 @@ _____________________________________________________ */
 .footer-right
 	text-align right
 	col(6)
+
+@media (max-width 500px)
+	.footer-left
+		text-align center
+		col(12)
+
+	.footer-right
+		text-align center
+		col(12)
+		margin-top 10px
