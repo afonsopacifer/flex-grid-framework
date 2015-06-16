@@ -60,6 +60,12 @@ _____________________________________________________ */
 .title-lv1 {
   font-size: 48px;
   margin-top: 0;
+  padding: 0 30px;
+}
+@media (max-width: 380px) {
+  .title-lv1 {
+    padding: 0;
+  }
 }
 .title-lv2 {
   font-size: 30px;
