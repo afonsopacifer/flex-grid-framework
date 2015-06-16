@@ -41,6 +41,12 @@ _____________________________________________________ */
   width: 100%;
   max-width: 610px;
 }
+@media (max-width: 610px) {
+  .note {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 /* title container
 _____________________________________________________ */
 .title-container {
@@ -61,6 +67,17 @@ _____________________________________________________ */
 .title-lv3 {
   font-size: 30px;
   color: #fff;
+}
+@media (max-width: 600px) {
+  .title-lv1 {
+    font-size: 38px;
+  }
+  .title-lv2 {
+    font-size: 25px;
+  }
+  .title-lv3 {
+    font-size: 25px;
+  }
 }
 .title-lv4 {
   font-size: 20px;
@@ -102,6 +119,13 @@ _____________________________________________________ */
   margin: 30px 0 45px 0;
   display: inline-block;
   text-decoration: none;
+}
+@media (max-width: 610px) {
+  .btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+  }
 }
 .btn:hover {
   background-color: #82212b;
@@ -195,6 +219,15 @@ _____________________________________________________ */
   margin-right: 0.52083%;
   margin-left: 0.52083%;
   margin-left: 17.18769%;
+}
+@media (max-width: 600px) {
+  .code {
+    width: 98.95949999999999%;
+    margin-right: 0.52083%;
+    margin-left: 0.52083%;
+    margin-left: 0.52083%;
+    padding: 0 10px;
+  }
 }
 .code .pre {
   background-color: #03001c;
@@ -390,4 +423,19 @@ _____________________________________________________ */
   width: 48.95892%;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
+}
+@media (max-width: 500px) {
+  .footer-left {
+    text-align: center;
+    width: 98.95949999999999%;
+    margin-right: 0.52083%;
+    margin-left: 0.52083%;
+  }
+  .footer-right {
+    text-align: center;
+    width: 98.95949999999999%;
+    margin-right: 0.52083%;
+    margin-left: 0.52083%;
+    margin-top: 10px;
+  }
 }
