@@ -1,0 +1,21 @@
+{
+  "name": "flex-grid-framework",
+  "version": "0.1.0",
+  "homepage": "https://afonsopacifer.github.io/flex-grid-framework/",
+  "authors": [
+    "afonsopacifer <afonsopacifer@live.com>"
+  ],
+  "description": "A grid based in Flexbox and Stylus",
+  "main": "flex-grid-framework.styl",
+  "keywords": [
+    "[flexbox",
+    "grid",
+    "stylus]"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
