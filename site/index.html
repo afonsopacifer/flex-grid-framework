@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Flex Grid Framework</title>
-		
+
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
@@ -113,7 +113,8 @@
 		================================================== -->
 		<div class="title-container">
 			<h3 class="title-lv3"><span class="yellow">Items</span> features</h3>
-			<h4 class="title-lv4 yellow">Choose your combination between 12 responsive columns</h4>
+			<h4 class="title-lv4 yellow">Choose your combination between 12 percentage based columns and a 'flex'
+			column to fill in the remaining space.</h4>
 		</div>
 
 		<div class="code">
@@ -138,6 +139,12 @@
 .example-12
   <span class="featured">col(12)</span>
 
+.example-2
+  <span class="featured">col(2)</span>
+
+.example-flex
+  <span class="featured">col(flex)</span>
+
 </code>
 </pre>
 
@@ -150,6 +157,8 @@
 			<div class="yellow-bar-5"></div>
 			<div class="yellow-bar-7"></div>
 			<div class="yellow-bar-12"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-flex"></div>
 
 		</div>
 
