@@ -37,8 +37,17 @@ row()
 
 /* Columns
 ------------------------------------------------*/
-col(number-of-cols)
-	width (number-of-cols * column) + (((number-of-cols - 1) * 2) * margin)
+col(number-of-cols = flex)
+	if (number-of-cols is a 'unit')
+    width (number-of-cols * column) + (((number-of-cols - 1) * 2) * margin)
+
+	if (number-of-cols == flex)
+    -webkit-box-flex: auto;
+    -moz-box-flex: auto;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+
 	margin-right margin
 	margin-left margin
 
