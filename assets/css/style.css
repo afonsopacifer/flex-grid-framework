@@ -246,6 +246,9 @@ _____________________________________________________ */
 .featured {
   color: #fe9600;
 }
+.commented {
+  color: #808080;
+}
 /* Yellow bars
 _____________________________________________________ */
 .yellow-bar-1 {
@@ -353,6 +356,19 @@ _____________________________________________________ */
   margin-bottom: 5px;
   height: 30px;
   width: 98.95949999999999%;
+  margin-right: 0.52083%;
+  margin-left: 0.52083%;
+}
+.yellow-bar-flex {
+  background-color: #f7cb34;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+  -webkit-box-flex: auto;
+  -moz-box-flex: auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
   margin-right: 0.52083%;
   margin-left: 0.52083%;
 }
