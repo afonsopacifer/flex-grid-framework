@@ -1,3 +1,5 @@
+![flex grid framework logo](readme-cover.png)
+
 # [Flex Grid Framework](https://afonsopacifer.github.io/flex-grid-framework/)
 
 > A grid based in Flexbox and Stylus.
