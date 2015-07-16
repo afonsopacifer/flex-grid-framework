@@ -107,6 +107,8 @@ _____________________________________________________ */
 .link-magenta {
   color: #e22b4b;
   text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .link-magenta:hover {
   color: #82212b;
@@ -114,6 +116,8 @@ _____________________________________________________ */
 .link-white {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .link-white:hover {
   color: #82212b;
@@ -125,6 +129,8 @@ _____________________________________________________ */
   margin: 30px 0 45px 0;
   display: inline-block;
   text-decoration: none;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 @media (max-width: 610px) {
   .btn {
