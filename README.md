@@ -6,9 +6,11 @@
 
 ##Install
 
-1- [Download](https://github.com/afonsopacifer/flex-grid-framework/archive/0.1.0.zip) or use the bower:
+1- [Download](https://github.com/afonsopacifer/flex-grid-framework/archive/0.1.0.zip) or use the bower/npm:
 
     bower install flex-grid-framework
+    
+    npm install flex-grid-framework
 
 2 - Import the flex-grid-framework.styl in your stylus file:
 
