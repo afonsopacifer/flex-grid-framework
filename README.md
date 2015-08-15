@@ -6,7 +6,7 @@
 
 ## Install
 
-1- get the project: ([Download directly](https://github.com/afonsopacifer/flex-grid-framework/archive/0.1.0.zip))
+1- get the project: ([Download directly](https://github.com/afonsopacifer/flex-grid-framework/archive/0.2.2.zip))
 
 Install via bower:
 
