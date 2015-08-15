@@ -54,12 +54,12 @@ col(number-of-cols = flex)
 
 /* Offset
 ------------------------------------------------*/
-offset(number-of-offset)
+offset(number-of-offset = 0)
 	margin-left (number-of-offset * column) + (((number-of-offset - 1) * 2) * margin) + (3 * margin)
 
 /* Flex Container
 ------------------------------------------------*/
-justify(content-value)
+justify(content-value = left)
 	if (content-value == left)
     -webkit-box-pack start
     -webkit-justify-content flex-start
@@ -91,7 +91,7 @@ justify(content-value)
 
 /* Flex Itens
 ------------------------------------------------*/
-vertical-align(vertical-value)
+vertical-align(vertical-value = top)
 	if (vertical-value == top)
     -webkit-box-align start
     -webkit-align-items flex-start

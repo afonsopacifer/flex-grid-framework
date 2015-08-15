@@ -4,7 +4,7 @@
 
 > A grid based in Flexbox and Stylus.
 
-##Install
+## Install
 
 1- get the project: ([Download directly](https://github.com/afonsopacifer/flex-grid-framework/archive/0.1.0.zip))
 
@@ -20,19 +20,19 @@ Install via npm:
 
     @import "flex-grid-framework"
 
-##Docs
+## Docs
 See in the [framework website](https://afonsopacifer.github.io/flex-grid-framework/).
 
-##Demo
+## Demo
 [View in Codepen](http://codepen.io/afonsopacifer/pen/KpvPOb)
 
-##Browsers support
+## Browsers support
 Verify in [Can I use](http://caniuse.com/#search=flexbox) the browser support for the flex property.
 
-##Contributing
+## Contributing
 Want to contribute? [Follow these recommendations](https://github.com/afonsopacifer/flex-grid-framework/blob/master/contributing.md).
 
-####[Thanks to everyone who contribute to this project :)](https://github.com/afonsopacifer/flex-grid-framework/graphs/contributors)
+#### [Thanks to everyone who contribute to this project :)](https://github.com/afonsopacifer/flex-grid-framework/graphs/contributors)
 
-##Licence
+## Licence
 [MIT Licence](https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md) © Afonso Pacifer
