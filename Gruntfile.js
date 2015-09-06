@@ -31,7 +31,7 @@ module.exports = function( grunt ) {
     // stylus
     stylus: {
       options: {
-        compress: false,
+        compress: true,
       },
       compile: {
         files: {
