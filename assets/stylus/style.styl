@@ -25,9 +25,21 @@ yellow-bar()
 
 /* _____________________________________________________ */
 
+bg-dark = #30253d
+bg-light = #362a45
+bg-half = #332841
+
 body
 	font-family 'Open Sans', sans-serif
-	background url(../img/bg.png)
+	background-color:bg-half;
+	background-image: linear-gradient(30deg, bg-dark 12%, transparent 12.5%, transparent 87%, bg-dark 87.5%, bg-dark),
+	linear-gradient(150deg, bg-dark 12%, transparent 12.5%, transparent 87%, bg-dark 87.5%, bg-dark),
+	linear-gradient(30deg, bg-dark 12%, transparent 12.5%, transparent 87%, bg-dark 87.5%, bg-dark),
+	linear-gradient(150deg, bg-dark 12%, transparent 12.5%, transparent 87%, bg-dark 87.5%, bg-dark),
+	linear-gradient(60deg, bg-light 25%, transparent 25.5%, transparent 75%, bg-light 75%, bg-light),
+	linear-gradient(60deg, bg-light 25%, transparent 25.5%, transparent 75%, bg-light 75%, bg-light);
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 
 .fork-me
 	position fixed
@@ -44,7 +56,9 @@ _____________________________________________________ */
 	text-align center
 	col(12)
 
-
+.logo
+	width 100%
+	max-width 540px
 /* Note
 _____________________________________________________ */
 .note
