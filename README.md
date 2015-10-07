@@ -1,4 +1,4 @@
-![flex grid framework logo](https://github.com/afonsopacifer/flex-grid-framework/raw/master/readme-cover.png)
+<img src="https://rawgit.com/afonsopacifer/flex-grid-framework/raw/master/readme-cover.svg" alt="Flex Grid Framework">
 
 ![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)
 ![release](https://img.shields.io/badge/release-v0.2.2-blue.svg)
