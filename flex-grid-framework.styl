@@ -14,7 +14,7 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 ------------------------------------------------*/
 max-width = 1200px
 margin = 0.52083%
-column = 7.29177%
+column_width = 7.29177%
 
 /* Box Model
 ------------------------------------------------*/
@@ -40,7 +40,7 @@ row()
 ------------------------------------------------*/
 col(number-of-cols = flex)
 	if (number-of-cols is a 'unit')
-    width (number-of-cols * column) + (((number-of-cols - 1) * 2) * margin)
+    width (number-of-cols * column_width) + (((number-of-cols - 1) * 2) * margin)
 
 	if (number-of-cols == flex)
     -webkit-box-flex auto
@@ -55,7 +55,7 @@ col(number-of-cols = flex)
 /* Offset
 ------------------------------------------------*/
 offset(number-of-offset = 0)
-	margin-left (number-of-offset * column) + (((number-of-offset - 1) * 2) * margin) + (3 * margin)
+	margin-left (number-of-offset * column_width) + (((number-of-offset - 1) * 2) * margin) + (3 * margin)
 
 /* Flex Container
 ------------------------------------------------*/
