@@ -1,9 +1,9 @@
-[<img src="https://rawgit.com/afonsopacifer/flex-grid-framework/master/readme-cover.svg" alt="Flex Grid Framework">](https://afonsopacifer.github.io/flex-grid-framework/)
+[<img src="https://rawgit.com/afonsopacifer/flex-grid-framework/master/readme-cover.svg" alt="Flex Grid Framework">](http://flexgridframework.com/)
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md)
 [![release](https://img.shields.io/badge/release-v0.2.2-blue.svg)](https://github.com/afonsopacifer/flex-grid-framework/archive/0.2.2.zip)
 
-# [Flex Grid Framework](https://afonsopacifer.github.io/flex-grid-framework/)
+# [Flex Grid Framework](http://flexgridframework.com/)
 
 > A grid based in Flexbox and Stylus.
 
@@ -24,7 +24,7 @@ Install via npm:
     @import "flex-grid-framework"
 
 ## Docs
-See in the [framework website](https://afonsopacifer.github.io/flex-grid-framework/).
+See in the [framework website](http://flexgridframework.com/).
 
 ## Demo
 [View in Codepen](http://codepen.io/afonsopacifer/pen/KpvPOb)
