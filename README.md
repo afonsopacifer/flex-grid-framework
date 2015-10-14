@@ -31,6 +31,9 @@ See in the [framework website](https://afonsopacifer.github.io/flex-grid-framewo
 ## Browsers support
 Verify in [Can I use](http://caniuse.com/#search=flexbox) the browser support for the flex property.
 
+## History
+See [Changelog](changelog.md) for more details.
+
 ## Contributing
 Want to contribute? [Follow these recommendations](https://github.com/afonsopacifer/flex-grid-framework/blob/master/contributing.md).
 
