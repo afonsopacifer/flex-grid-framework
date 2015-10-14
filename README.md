@@ -1,7 +1,8 @@
-<img src="https://rawgit.com/afonsopacifer/flex-grid-framework/master/readme-cover.svg" alt="Flex Grid Framework">
+[<img src="https://rawgit.com/afonsopacifer/flex-grid-framework/master/readme-cover.svg" alt="Flex Grid Framework">](https://afonsopacifer.github.io/flex-grid-framework/)
 
-![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)
-![release](https://img.shields.io/badge/release-v0.2.2-blue.svg)
+[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md)
+[![release](https://img.shields.io/badge/release-v0.2.2-blue.svg)](https://github.com/afonsopacifer/flex-grid-framework/archive/0.2.2.zip)
+
 # [Flex Grid Framework](https://afonsopacifer.github.io/flex-grid-framework/)
 
 > A grid based in Flexbox and Stylus.
