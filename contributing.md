@@ -26,5 +26,5 @@ $ npm install
 
 *2 - Start the static server and watch from compile the .styl files*
 ```sh
-$ grunt
+$ grunt serve
 ```

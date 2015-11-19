@@ -72,6 +72,6 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   // tasks
-  grunt.registerTask( 'default', ['connect','watch']);
+  grunt.registerTask( 'serve', ['connect','watch']);
   grunt.registerTask( 'deploy', ['gh-pages']);
 };
