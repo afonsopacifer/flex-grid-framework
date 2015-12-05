@@ -1,7 +1,7 @@
 [<img src="https://rawgit.com/afonsopacifer/flex-grid-framework/master/readme-cover.svg" alt="Flex Grid Framework">](http://flexgridframework.com/)
 
-[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md)
-[![release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/afonsopacifer/flex-grid-framework/archive/0.2.2.zip)
+[![licence mit](https://img.shields.io/badge/licence-MIT-yellow.svg)](https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md)
+[![release](https://img.shields.io/badge/release-v1.0.0-yellow.svg)](https://github.com/afonsopacifer/flex-grid-framework/archive/0.2.2.zip)
 
 # [Flex Grid Framework](http://flexgridframework.com/)
 

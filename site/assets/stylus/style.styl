@@ -2,13 +2,12 @@
 
 /* Colors
 _____________________________________________________ */
-purple = #441255
-magenta = #e22b4b
-magenta-dark = #82212b
-yellow = #f7cb34
-blue = #1fb8c0
-code-background = #03001c
-pumpkin = #fe9600
+magenta = #E22B4A
+magenta-dark = rgb(170, 11, 64)
+yellow = #ccc
+code-background = #000
+blue = #9c9c9c
+pumpkin = #f7cb34
 
 /* Mixins
 _____________________________________________________ */
@@ -25,39 +24,69 @@ yellow-bar()
 
 /* _____________________________________________________ */
 
-bg-dark = #30253d
-bg-light = #362a45
-bg-half = #332841
-
 body
-	font-family 'Open Sans', sans-serif
-	background-color:bg-half;
-	background-image: linear-gradient(30deg, bg-dark 12%, transparent 12.5%, transparent 87%, bg-dark 87.5%, bg-dark),
-	linear-gradient(150deg, bg-dark 12%, transparent 12.5%, transparent 87%, bg-dark 87.5%, bg-dark),
-	linear-gradient(30deg, bg-dark 12%, transparent 12.5%, transparent 87%, bg-dark 87.5%, bg-dark),
-	linear-gradient(150deg, bg-dark 12%, transparent 12.5%, transparent 87%, bg-dark 87.5%, bg-dark),
-	linear-gradient(60deg, bg-light 25%, transparent 25.5%, transparent 75%, bg-light 75%, bg-light),
-	linear-gradient(60deg, bg-light 25%, transparent 25.5%, transparent 75%, bg-light 75%, bg-light);
-	background-size:80px 140px;
-	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+	font-family 'Play', sans-serif
+	font-weight 300
+	background-color #fff
+	background-size 80px 140px
+
+.the-basic
+	background-color #F7CB34
+	padding-bottom 50px
+
+.the-basic h3
+	color #222222
+
+.the-basic h4
+	color #222222
+
+.item-feature
+	background-color #E22B4A
+	padding-bottom 50px
+
+.container-features
+	background-color #F7CB34
+	padding-bottom 50px
+
+.container-features h3
+	color #222222
+
+.container-features h4
+	color #222222
+
+.breakpoint
+	background-color #E22B4A
+	padding-bottom 50px
+
+.support
+	background-color #FFF
+	padding-bottom 50px
+
+.support h3
+	color #222222
+
+.support p
+	color #222222
+
 
 /* header
 _____________________________________________________ */
 .header-bg
 	padding 50px 0
+	background #E6E6E6
 
 .header
-	color #fff
 	text-align center
 	@extend $col-12
 
 .logo
 	width 100%
 	max-width 540px
+
 /* Note
 _____________________________________________________ */
 .note
-	background-color yellow
+	background-color #FFF
 	color #000
 	padding 10px 15px
 	margin 0 auto
@@ -94,6 +123,9 @@ _____________________________________________________ */
 .title-lv3
 	font-size 30px
 	color #fff
+	padding 30px 0
+	margin 0
+
 
 @media (max-width 600px)
 	.title-lv1
@@ -166,10 +198,9 @@ _____________________________________________________ */
 	@extend $row
 
 .demo-row
-	background-color magenta
+	background-color #fff
 	padding 10px 0
 	margin-top 10px
-	margin-bottom  50px
 	shadow()
 	@extend $row
 
@@ -200,6 +231,14 @@ _____________________________________________________ */
 /* Code block
 _____________________________________________________ */
 
+.code-sh
+	width 390px
+	margin 0 auto
+
+.code-sh .pre
+	background-color code-background
+	color blue
+
 .code
 	@extend $col-8
 	@extend $offset-2
@@ -214,7 +253,6 @@ _____________________________________________________ */
 	background-color code-background
 	color blue
 	padding-left 10px
-	shadow()
 
 .featured
 	color pumpkin
@@ -305,28 +343,9 @@ _____________________________________________________ */
 /* Footer
 _____________________________________________________ */
 .footer-container
-	background-color magenta
-	padding 10px 0
-	margin-top 80px
+	background-color #222222
+	padding 20px 0
 	width 100%
 
 .footer
-	@extend $row
-
-.footer-left
-	text-align left
-	@extend $col-6
-
-.footer-right
-	text-align right
-	@extend $col-6
-
-@media (max-width 500px)
-	.footer-left
-		text-align center
-		mq-col(12)
-
-	.footer-right
-		text-align center
-		mq-col(12)
-		margin-top 10px
+	text-align center
