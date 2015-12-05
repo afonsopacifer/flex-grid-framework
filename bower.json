@@ -1,11 +1,11 @@
 {
   "name": "flex-grid-framework",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "homepage": "http://flexgridframework.com/",
   "authors": [
     "afonsopacifer <afonsopacifer@live.com>"
   ],
-  "description": "A grid based in Flexbox and Stylus",
+  "description": "The Flex Semantic Grid focusing on performance for stylus.",
   "main": "flex-grid-framework.styl",
   "keywords": [
     "[flexbox",

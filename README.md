@@ -1,15 +1,24 @@
 [<img src="https://rawgit.com/afonsopacifer/flex-grid-framework/master/readme-cover.svg" alt="Flex Grid Framework">](http://flexgridframework.com/)
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md)
-[![release](https://img.shields.io/badge/release-v0.2.2-blue.svg)](https://github.com/afonsopacifer/flex-grid-framework/archive/0.2.2.zip)
+[![release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/afonsopacifer/flex-grid-framework/archive/0.2.2.zip)
 
 # [Flex Grid Framework](http://flexgridframework.com/)
 
-> A grid based in Flexbox and Stylus.
+> The Flex Semantic Grid focusing on performance for stylus.
+
+## Best features
+
+- Semantic Gird
+- All the powers of Flexbox
+- Use extends to generate less css
+- Use mixins to overwrite only the necessary (For Media Queries)
+- Compatible with Stylus
+- Easy to use
 
 ## Install
 
-1- get the project: ([Download directly](https://github.com/afonsopacifer/flex-grid-framework/archive/0.2.2.zip))
+1- get the project: ([Download directly](https://github.com/afonsopacifer/flex-grid-framework/archive/1.0.0.zip))
 
 Install via bower:
 
