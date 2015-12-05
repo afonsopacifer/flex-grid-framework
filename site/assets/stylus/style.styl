@@ -49,7 +49,7 @@ _____________________________________________________ */
 .header
 	color #fff
 	text-align center
-	col(12)
+	@extend $col-12
 
 .logo
 	width 100%
@@ -74,7 +74,7 @@ _____________________________________________________ */
 /* title container
 _____________________________________________________ */
 .title-container
-	col(12)
+	@extend $col-12
 	text-align center
 
 /* headers
@@ -163,7 +163,7 @@ _____________________________________________________ */
 /* rows
 _____________________________________________________ */
 .container
-	row()
+	@extend $row
 
 .demo-row
 	background-color magenta
@@ -171,42 +171,43 @@ _____________________________________________________ */
 	margin-top 10px
 	margin-bottom  50px
 	shadow()
-	row()
+	@extend $row
 
 .c-align-left
-	justify(left)
+	@extend $justify-left
 
 .c-align-right
-	justify(right)
+	@extend $justify-right
 
 .c-align-center
-	justify(center)
+	@extend $justify-center
 
 .c-align-between
-	justify(between)
+	@extend $justify-between
 
 .c-align-around
-	justify(around)
+	@extend $justify-around
 
 .v-align-top
-	vertical-align(top)
+	@extend $vertical-align-top
 
 .v-align-middle
-	vertical-align(middle)
+	@extend $vertical-align-middle
 
 .v-align-bottom
-	vertical-align(bottom)
+	@extend $vertical-align-bottom
+
 /* Code block
 _____________________________________________________ */
 
 .code
-	col(8)
-	offset(2)
+	@extend $col-8
+	@extend $offset-2
 
 @media (max-width 600px)
 	.code
-		col(12)
-		offset(0)
+		mq-col(12)
+		mq-offset(0)
 		padding 0 10px
 
 .code .pre
@@ -225,78 +226,78 @@ _____________________________________________________ */
 _____________________________________________________ */
 .yellow-bar-1
 	yellow-bar()
-	col(1)
+	@extend $col-1
 
 .yellow-bar-2
 	yellow-bar()
-	col(2)
+	@extend $col-2
 
 .yellow-bar-3
 	yellow-bar()
-	col(3)
+	@extend $col-3
 
 .yellow-bar-4
 	yellow-bar()
-	col(4)
+	@extend $col-4
 
 .yellow-bar-5
 	yellow-bar()
-	col(5)
+	@extend $col-5
 
 .yellow-bar-6
 	yellow-bar()
-	col(6)
+	@extend $col-6
 
 .yellow-bar-7
 	yellow-bar()
-	col(7)
+	@extend $col-7
 
 .yellow-bar-8
 	yellow-bar()
-	col(8)
+	@extend $col-8
 
 .yellow-bar-9
 	yellow-bar()
-	col(9)
+	@extend $col-9
 
 .yellow-bar-10
 	yellow-bar()
-	col(10)
+	@extend $col-10
 
 .yellow-bar-11
 	yellow-bar()
-	col(11)
+	@extend $col-11
 
 .yellow-bar-12
 	yellow-bar()
-	col(12)
+	@extend $col-12
 
 .yellow-bar-flex
 	yellow-bar()
-	col(flex)
+	@extend $col-flex
 
 .yellow-bar-x
 	yellow-bar()
-	col(3)
-	offset(3)
+	@extend $col-3
+	@extend $offset-3
 
 .yellow-bar-y
 	yellow-bar()
-	col(6)
+	@extend $col-6
 
 @media (max-width 811px)
 	.yellow-bar-x
-		col(12)
-		offset(0)
+		mq-col(12)
+		mq-offset(0)
 
 	.yellow-bar-y
-		col(12)
+		mq-col(12)
 
 .offset-6
-	offset(6)
+	@extend $offset-6
 
 .offset-7
-	offset(7)
+	@extend $offset-7
 
 .big
 	height 90px
@@ -310,22 +311,22 @@ _____________________________________________________ */
 	width 100%
 
 .footer
-	row()
+	@extend $row
 
 .footer-left
 	text-align left
-	col(6)
+	@extend $col-6
 
 .footer-right
 	text-align right
-	col(6)
+	@extend $col-6
 
 @media (max-width 500px)
 	.footer-left
 		text-align center
-		col(12)
+		mq-col(12)
 
 	.footer-right
 		text-align center
-		col(12)
+		mq-col(12)
 		margin-top 10px
