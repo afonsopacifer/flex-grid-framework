@@ -4,10 +4,9 @@
 _____________________________________________________ */
 magenta = #E22B4A
 magenta-dark = rgb(170, 11, 64)
-yellow = #ccc
 code-background = #000
-blue = #9c9c9c
-pumpkin = #f7cb34
+code-default = #9c9c9c
+code-highlight = #f7cb34
 
 /* Mixins
 _____________________________________________________ */
@@ -17,7 +16,7 @@ shadow()
 	box-shadow 3px 3px 3px 0px rgba(50, 50, 50, 0.77)
 
 yellow-bar()
-	background-color yellow
+	background-color #ccc
 	margin-top 5px
 	margin-bottom 5px
 	height 30px
@@ -29,45 +28,7 @@ body
 	font-weight 300
 	background-color #fff
 	background-size 80px 140px
-
-.the-basic
-	background-color #F7CB34
-	padding-bottom 50px
-
-.the-basic h3
-	color #222222
-
-.the-basic h4
-	color #222222
-
-.item-feature
-	background-color #E22B4A
-	padding-bottom 50px
-
-.container-features
-	background-color #F7CB34
-	padding-bottom 50px
-
-.container-features h3
-	color #222222
-
-.container-features h4
-	color #222222
-
-.breakpoint
-	background-color #E22B4A
-	padding-bottom 50px
-
-.support
-	background-color #FFF
-	padding-bottom 50px
-
-.support h3
-	color #222222
-
-.support p
-	color #222222
-
+	font-size 18px
 
 /* header
 _____________________________________________________ */
@@ -83,6 +44,46 @@ _____________________________________________________ */
 	width 100%
 	max-width 540px
 
+/* Sections
+_____________________________________________________ */
+.the-basic
+	background-color #F7CB34
+	padding-bottom 50px
+
+.the-basic .title-lv3
+	color #222222
+
+.the-basic .title-lv4
+	color #222222
+
+.item-feature
+	background-color magenta
+	padding-bottom 50px
+
+.container-features
+	background-color #F7CB34
+	padding-bottom 50px
+
+.container-features .title-lv3
+	color #222222
+
+.container-features .title-lv4
+	color #222222
+
+.breakpoint
+	background-color magenta
+	padding-bottom 50px
+
+.support
+	background-color #E6E6E6
+	padding-bottom 50px
+
+.support .title-lv3
+	color #222222
+
+.support p
+	color #222222
+
 /* Note
 _____________________________________________________ */
 .note
@@ -94,6 +95,7 @@ _____________________________________________________ */
 	shadow()
 	width 100%
 	max-width 610px
+	font-size 16px
 
 @media (max-width 610px)
 	.note
@@ -126,7 +128,6 @@ _____________________________________________________ */
 	padding 30px 0
 	margin 0
 
-
 @media (max-width 600px)
 	.title-lv1
 		font-size 38px
@@ -138,16 +139,14 @@ _____________________________________________________ */
 		font-size 25px
 
 .title-lv4
-	font-size 20px
+	font-size 25px
 	color #fff
 	font-style oblique
 	font-weight 700
 
-.yellow
-	color yellow
-
 .magenta
 	color magenta
+
 /* Other texts
 _____________________________________________________ */
 .standard-paragraph
@@ -230,14 +229,13 @@ _____________________________________________________ */
 
 /* Code block
 _____________________________________________________ */
-
 .code-sh
 	width 390px
 	margin 0 auto
 
 .code-sh .pre
 	background-color code-background
-	color blue
+	color code-default
 
 .code
 	@extend $col-8
@@ -251,11 +249,11 @@ _____________________________________________________ */
 
 .code .pre
 	background-color code-background
-	color blue
+	color code-default
 	padding-left 10px
 
 .featured
-	color pumpkin
+	color code-highlight
 
 .commented
 	color grey

@@ -3,7 +3,7 @@
 [![licence mit](https://img.shields.io/badge/licence-MIT-yellow.svg)](https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md)
 [![release](https://img.shields.io/badge/release-v1.0.0-yellow.svg)](https://github.com/afonsopacifer/flex-grid-framework/archive/1.0.0.zip)
 
-# [Flex Grid Framework](http://flexgridframework.com/)
+# [FlexGridFramework.com](http://flexgridframework.com/)
 
 > The Flex Semantic Grid focusing on performance for [stylus](https://learnboost.github.io/stylus/).
 
