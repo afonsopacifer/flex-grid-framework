@@ -1,8 +1,8 @@
 {
   "name": "flex-grid-framework",
   "author": "Afonso Pacifer",
-  "version": "0.2.2",
-  "description": "A grid based on flexbox",
+  "version": "1.0.0",
+  "description": "The Flex Semantic Grid focusing on performance for stylus.",
   "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",

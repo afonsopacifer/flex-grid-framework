@@ -2,17 +2,17 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 
 	<head>
-		<meta charset="utf-8">
+
 		<title>Flex Grid Framework</title>
 
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 		<link rel="stylesheet" href="assets/css/style.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
 
 		<!-- Meta SEO -->
-		<meta name="description" content="A grid based in Flexbox and Stylus">
+		<meta name="description" content="The Flex Semantic Grid focusing on performance for stylus.">
 		<meta name="keywords" content="flexbox,grid,framework,css,gridsystem,stylus">
 		<meta name="robots" content="index,follow">
 
@@ -20,13 +20,13 @@
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@afonsopacifer">
 		<meta name="twitter:title" content="Flex Grid Framework">
-		<meta name="twitter:description" content="A grid based in Flexbox and Stylus">
+		<meta name="twitter:description" content="The Flex Semantic Grid focusing on performance for stylus.">
 		<meta name="twitter:image" content="http://flexgridframework.com/assets/img/logo.jpg">
 
 		<!-- Facebook Open Graph -->
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Flex Grid Framework">
-		<meta property="og:description" content="A grid based in Flexbox and Stylus">
+		<meta property="og:description" content="The Flex Semantic Grid focusing on performance for stylus.">
 		<meta property="og:url" content="http://flexgridframework.com/">
 		<meta property="og:image" content="http://flexgridframework.com/assets/img/logo.jpg">
 
@@ -34,7 +34,8 @@
 
 	<body>
 
-	<a href="https://github.com/afonsopacifer/flex-grid-framework" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+	<!-- Github corner <3 -->
+	<a href="https://github.com/afonsopacifer/flex-grid-framework" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#E22B4A; color:#E6E6E6; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
 		<!-- header
 		================================================== -->
@@ -42,15 +43,41 @@
 			<div class="header">
 
 				<h1>
+					<!-- logotipo -->
 					<img class="logo" src="assets/img/logo-flex-grid-framework.svg" alt="Flex Grid Framework"></img>
 				</h1>
 
 				<h2 class="title-lv2">
-					A grid based in <a href="http://www.w3.org/TR/css3-flexbox/" target="_blank" class="link-magenta">Flexbox</a> and <a href="https://learnboost.github.io/stylus/" target="_blank" class="link-magenta">Stylus</a> :D<br>
+					The <a href="http://www.w3.org/TR/css3-flexbox/" target="_blank" class="link-magenta">Flex</a> Semantic Grid for <a href="https://learnboost.github.io/stylus/" target="_blank" class="link-magenta">Stylus</a>
 				</h2>
 
-				<a href="http://codepen.io/afonsopacifer/pen/KpvPOb" target="_blank" class="btn">View a demo</a>
-				<a href="https://github.com/afonsopacifer/flex-grid-framework" class="btn">Download V 0.2.2</a>
+			<div class="code-sh">
+<pre class="pre">
+<code>
+$ bower install <span class="featured">flex-grid-framework</span>
+</code>
+</pre>
+			</div>
+
+			<div class="code-sh">
+<pre class="pre">
+<code>
+$ npm install <span class="featured">flex-grid-framework</span>
+</code>
+</pre>
+			</div>
+
+				<a href="https://github.com/afonsopacifer/flex-grid-framework/archive/1.0.0.zip" class="btn">Download v1.0.0</a>
+
+			</div>
+		</header>
+
+			<!-- The basics
+			================================================== -->
+			<div class="the-basic">
+
+			<div class="title-container">
+				<h3 class="title-lv3">Baby steps</h3>
 
 				<p class="note">
 					<strong>Note:</strong>
@@ -58,17 +85,9 @@
 					with the Stylus preprocessor using NodeJS,
 					for more information see <a href="https://nodejs.org/" target="_blank" class="link-magenta"><strong>NodeJS</strong></a> and <a href="https://learnboost.github.io/stylus/" target="_blank" class="link-magenta"><strong>Stylus</strong></a>.
 				</p>
+
+				<h4 class="title-lv4">1 - Create you markup</h4>
 			</div>
-		</header>
-
-			<!-- The basics
-			================================================== -->
-
-			<div class="title-container">
-				<h3 class="title-lv3">The basics</h3>
-				<h4 class="title-lv4">Create you markup</h4>
-			</div>
-
 			<div class="code">
 
 <pre class="pre">
@@ -82,7 +101,7 @@
 			</div>
 
 			<div class="title-container">
-				<h4 class="title-lv4">Import the framework</h4>
+				<h4 class="title-lv4">2 - Import the framework</h4>
 			</div>
 
 			<div class="code">
@@ -93,20 +112,20 @@
 </pre>
 			</div>
 			<div class="title-container">
-				<h4 class="title-lv4">Set your rows and columns</h4>
+				<h4 class="title-lv4">3 - Set your rows and columns</h4>
 			</div>
 
 			<div class="code">
 <pre class="pre">
 <code>
 .container
-  <span class="featured">row()</span>
+  <span class="featured">@extend $row</span>
 
 .yellow-bar
-  <span class="featured">col(6)</span>
+  <span class="featured">@extend $col-6</span>
 
 .yellow-bar
-  <span class="featured">col(6)</span>
+  <span class="featured">@extend $col-6</span>
 
 </code>
 </pre>
@@ -120,12 +139,14 @@
 
 		</div>
 
+		</div> <!-- / the basic -->
 
 		<!-- Item features - cols
 		================================================== -->
+		<div class="item-feature">
 		<div class="title-container">
-			<h3 class="title-lv3"><span class="yellow">Items</span> features</h3>
-			<h4 class="title-lv4 yellow">Choose your combination between 12 percentage based columns and a 'flex'
+			<h3 class="title-lv3">Items features</h3>
+			<h4 class="title-lv4">Choose your combination between 12 percentage based columns<br> and a 'flex'
 			column to fill in the remaining space.</h4>
 		</div>
 
@@ -134,28 +155,28 @@
 <code>
 
 .container
-  row()
+  @extend $row
 
 .example-1
-  <span class="featured">col(1)</span>
+  <span class="featured">@extend $col-1</span>
 
 .example-11
-  <span class="featured">col(11)</span>
+  <span class="featured">@extend $col-11</span>
 
 .example-5
-  <span class="featured">col(5)</span>
+  <span class="featured">@extend $col-5</span>
 
 .example-7
-  <span class="featured">col(7)</span>
+  <span class="featured">@extend $col-7</span>
 
 .example-12
-  <span class="featured">col(12)</span>
+  <span class="featured">@extend $col-12</span>
 
 .example-2
-  <span class="featured">col(2)</span>
+  <span class="featured">@extend $col-2</span>
 
 .example-flex
-  <span class="featured">col(flex)</span> <span class="commented">/* col() == col(flex) */</span>
+  <span class="featured">@extend $col-flex</span>
 
 </code>
 </pre>
@@ -177,23 +198,23 @@
 				<!-- Item features - equal width columns
 		================================================== -->
 		<div class="title-container">
-			<h4 class="title-lv4 yellow">Equal width columns</h4>
+			<h4 class="title-lv4">Equal width columns</h4>
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
+  @extend $row
 
 .example-flex
-  <span class="featured">col()</span>
+  <span class="featured">@extend $col-flex</span>
 
 .example-flex
-  <span class="featured">col()</span>
+  <span class="featured">@extend $col-flex</span>
 
 .example-flex
-  <span class="featured">col()</span>
+  <span class="featured">@extend $col-flex</span>
 
 </code>
 </pre>
@@ -211,21 +232,21 @@
 		<!-- Item features - offset
 		================================================== -->
 		<div class="title-container">
-			<h4 class="title-lv4 yellow">Offsetting columns</h4>
+			<h4 class="title-lv4">Offsetting columns</h4>
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
+  @extend $row
 
 .example-1
-  col(1)
+  @extend $col-1
 
 .example-5
-  col(5)
-  <span class="featured">offset(6)</span>
+  @extend $col-5
+  <span class="featured">@extend $offset-6</span>
 
 </code>
 </pre>
@@ -239,22 +260,24 @@
 
 		</div>
 
+		</div> <!-- / item features -->
 		<!-- Container features - side
 		================================================== -->
+		<div class="container-features">
 		<div class="title-container">
-			<h3 class="title-lv3"><span class="magenta">Container</span> features</h3>
-			<h4 class="title-lv4 magenta">Choose your side</h4>
+			<h3 class="title-lv3">Container features</h3>
+			<h4 class="title-lv4">Choose your side</h4>
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
-  <span class="featured">justify(left)</span>
+  @extend $row
+  <span class="featured">@extend $justify-left</span>
 
 .example-3
-  col(3)
+  @extend $col-3
 
 </code>
 </pre>
@@ -269,11 +292,11 @@
 <pre class="pre">
 <code>
 .container
-  row()
-  <span class="featured">justify(right)</span>
+  @extend $row
+  <span class="featured">@extend $justify-right</span>
 
 .example-3
-  col(3)
+  @extend $col-3
 
 </code>
 </pre>
@@ -287,18 +310,18 @@
 		<!-- Container features - Easily centralize
 		================================================== -->
 		<div class="title-container">
-			<h4 class="title-lv4 magenta">Easily centralize</h4>
+			<h4 class="title-lv4">Easily centralize</h4>
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
-  <span class="featured">justify(center)</span>
+  @extend $row
+  <span class="featured">@extend $justify-center</span>
 
 .example-3
-  col(3)
+  @extend $col-3
 
 </code>
 </pre>
@@ -312,27 +335,27 @@
 		<!-- Container features - Justify content: between
 		================================================== -->
 		<div class="title-container">
-			<h4 class="title-lv4 magenta">Justify content: between</h4>
+			<h4 class="title-lv4">Justify content: between</h4>
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
-  <span class="featured">justify(between)</span>
+  @extend $row
+  <span class="featured">@extend $justify-between</span>
 
 .example-2
-  col(2)
+  @extend $col-2
 
 .example-2
-  col(2)
+  @extend $col-2
 
 .example-2
-  col(2)
+  @extend $col-2
 
 .example-2
-  col(2)
+  @extend $col-2
 
 </code>
 </pre>
@@ -349,27 +372,27 @@
 		<!-- Container features - Justify content: around
 		================================================== -->
 		<div class="title-container">
-			<h4 class="title-lv4 magenta">Justify content: around</h4>
+			<h4 class="title-lv4">Justify content: around</h4>
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
-  <span class="featured">justify(around)</span>
+  @extend $row
+  <span class="featured">@extend $justify-around</span>
 
 .example-2
-  col(2)
+  @extend $col-2
 
 .example-2
-  col(2)
+  @extend $col-2
 
 .example-2
-  col(2)
+  @extend $col-2
 
 .example-2
-  col(2)
+  @extend $col-2
 
 </code>
 </pre>
@@ -386,21 +409,21 @@
 		<!-- Container features - Vertical align top
 		================================================== -->
 		<div class="title-container">
-			<h4 class="title-lv4 magenta">Vertical align top</h4>
+			<h4 class="title-lv4">Vertical align top</h4>
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
-  <span class="featured">vertical-align(top)</span>
+  @extend $row
+  <span class="featured">@extend $vertical-align-top</span>
 
 .example-6-big
-  col(6)
+  @extend $col-6
 
 .example-6
-  col(6)
+  @extend $col-6
 
 </code>
 </pre>
@@ -415,21 +438,21 @@
 		<!-- Container features - Vertical align middle
 		================================================== -->
 		<div class="title-container">
-			<h4 class="title-lv4 magenta">Vertical align middle</h4>
+			<h4 class="title-lv4">Vertical align middle</h4>
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
-  <span class="featured">vertical-align(middle)</span>
+  @extend $row
+  <span class="featured">@extend $vertical-align-middle</span>
 
 .example-6-big
-  col(6)
+  @extend $col-6
 
 .example-6
-  col(6)
+  @extend $col-6
 
 </code>
 </pre>
@@ -444,21 +467,21 @@
 		<!-- Container features - Vertical align bottom
 		================================================== -->
 		<div class="title-container">
-			<h4 class="title-lv4 magenta">Vertical align bottom</h4>
+			<h4 class="title-lv4">Vertical align bottom</h4>
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
-  <span class="featured">vertical-align(bottom)</span>
+  @extend $row
+  <span class="featured">@extend $vertical-align-bottom</span>
 
 .example-6-big
-  col(6)
+  @extend $col-6
 
 .example-6
-  col(6)
+  @extend $col-6
 
 </code>
 </pre>
@@ -470,33 +493,42 @@
 			<div class="yellow-bar-6"></div>
 		</div>
 
+		</div><!-- / container features -->
+
 		<!-- Breakpoints
 		================================================== -->
+		<div class="breakpoint">
+
 		<div class="title-container">
-			<h4 class="title-lv3 yellow">Custom <span class="magenta">breakpoint</span></h4>
-			<h3 class="title-lv4">Resize your window for view the changes</h3>
+			<h4 class="title-lv3">Custom mixins for breakpoints</h4>
+
+			<p class="note">
+				<strong>Tip:</strong>
+				We have several special mixins to be used in Media Queries. Ensuring that we only rewrite the necessary properties.<a href="https://github.com/afonsopacifer/flex-grid-framework/blob/master/mq-mixins.md" target="_blank" class="link-magenta"> <strong>See the complete list.</strong></a>
+			</p>
+
 		</div>
 
 		<div class="code">
 <pre class="pre">
 <code>
 .container
-  row()
+  @extend $row
 
 .example-x
-  col(3)
-  offset(3)
+  @extend $col-3
+  @extend $offset-3
 
 .example-y
-  col(12)
+  @extend $col-12
 
 <span class="featured">@media (max-width 811px)</span>
   .example-x
-    col(12)
-    offset(0)
+    <span class="featured">mq-col(12)</span>
+    <span class="featured">mq-offset(0)</span>
 
   .example-y
-    col(12)
+    <span class="featured">mq-col(12)</span>
 
 </code>
 </pre>
@@ -508,11 +540,15 @@
 			<div class="yellow-bar-y"></div>
 		</div>
 
+		</div> <!-- / breakpoint -->
+
 		<!-- Support
 		================================================== -->
-		<div class="title-container">
-			<h3 class="title-lv3">Browsers support</h3>
-			<p class="standard-paragraph">Verify in <a href="http://caniuse.com/#search=flexbox" class="link-magenta" target="_blank">Can I use</a> the browser support for the flex property</p>
+		<div class="support">
+			<div class="title-container">
+				<h3 class="title-lv3">Browsers support</h3>
+				<p class="standard-paragraph">Verify in <a href="http://caniuse.com/#search=flexbox" class="link-magenta" target="_blank">Can I use</a> the browser support for the flex property</p>
+			</div>
 		</div>
 
 		<!-- Footer
@@ -520,15 +556,7 @@
 		<footer class="footer-container">
 
 			<div class="footer">
-
-				<div class="footer-left">
-					<a href="https://github.com/afonsopacifer" target="_blank" class="link-white">Made with &#9829; by Afonso Pacifer</a>
-				</div>
-
-				<div class="footer-right">
-					<a href="https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md" target="_blank" class="link-white">MIT Licence</a>
-				</div>
-
+					<a href="https://github.com/afonsopacifer" target="_blank" class="link-white">Made with <span class="magenta">&#9829;</span> by Afonso Pacifer</a>
 			</div>
 
 		</footer>
