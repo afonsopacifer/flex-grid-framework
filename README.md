@@ -1,11 +1,11 @@
 [<img src="https://rawgit.com/afonsopacifer/flex-grid-framework/master/readme-cover.svg" alt="Flex Grid Framework">](http://flexgridframework.com/)
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-yellow.svg)](https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md)
-[![release](https://img.shields.io/badge/release-v1.0.0-yellow.svg)](https://github.com/afonsopacifer/flex-grid-framework/archive/1.0.0.zip)
+[![release](https://img.shields.io/badge/release-v1.1.0-yellow.svg)](https://github.com/afonsopacifer/flex-grid-framework/archive/1.1.0.zip)
 
 # [FlexGridFramework.com](http://flexgridframework.com/)
 
-> The Flex Semantic Grid focusing on performance for [stylus](https://learnboost.github.io/stylus/).
+> The Flex Semantic Grid focusing on performance for [stylus](https://learnboost.github.io/stylus/) and [Sass](http://sass-lang.com/).
 
 ## Features
 
@@ -13,7 +13,7 @@
 - All the powers of [Flexbox](https://github.com/afonsopacifer/awesome-flexbox)
 - Use [extends](https://css-tricks.com/the-extend-concept/) to generate less css
 - Use [mixins](https://learnboost.github.io/stylus/docs/mixins.html) to overwrite only the necessary (For Media Queries)
-- Compatible with [Stylus](https://learnboost.github.io/stylus/)
+- Compatible with [Stylus](https://learnboost.github.io/stylus/) and [Sass](http://sass-lang.com/).
 - [Easy to use](http://flexgridframework.com/)
 
 ## how to install and use?

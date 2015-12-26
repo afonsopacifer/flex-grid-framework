@@ -1,9 +1,12 @@
 # Changelog
 
+## v 1.1.0
+- Sass support :cupid:
+
 ## v 1.0.0
 - Use extends to generate less css
 - Use mixins (mq-mixins) to overwrite only the necessary (For Media Queries)
-- Update Docs with new features 
+- Update Docs with new features
 - New website created
 
 ## v 0.2.2
