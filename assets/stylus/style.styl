@@ -1,4 +1,11 @@
+/* Vendors
+_____________________________________________________ */
+
+// Flex Grid Framework
 @import "../../../flex-grid-framework"
+
+// Pure CSS Components - Tab Component
+@import "tab/tab"
 
 /* Colors
 _____________________________________________________ */
@@ -26,7 +33,7 @@ yellow-bar()
 body
 	font-family 'Play', sans-serif
 	font-weight 300
-	background-color #fff
+	background-color #E6E6E6
 	background-size 80px 140px
 	font-size 18px
 
@@ -49,6 +56,7 @@ _____________________________________________________ */
 .the-basic
 	background-color #F7CB34
 	padding-bottom 50px
+	width 100%
 
 .the-basic .title-lv3
 	color #222222
@@ -94,7 +102,7 @@ _____________________________________________________ */
 	display block
 	shadow()
 	width 100%
-	max-width 610px
+	max-width 660px
 	font-size 16px
 
 @media (max-width 610px)
@@ -241,6 +249,7 @@ _____________________________________________________ */
 .code
 	@extend $col-8
 	@extend $offset-2
+	text-align left
 
 @media (max-width 600px)
 	.code
