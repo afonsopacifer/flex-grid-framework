@@ -72,6 +72,13 @@ $ npm install <span class="featured">flex-grid-framework</span>
 			</div>
 		</header>
 
+			<div class="tab">
+
+			<!-- Tab Painel -->
+			<div class="tab-painel">
+			<input class="tab-open" id="tab-1" name="tab-wrap-1" type="radio" checked>
+			<label class="tab-nav" for="tab-1">Stylus</label>
+			<div class="tab-inner">
 			<!-- The basics
 			================================================== -->
 			<div class="the-basic">
@@ -560,6 +567,508 @@ $ npm install <span class="featured">flex-grid-framework</span>
 			</div>
 
 		</footer>
+
+		</div> <!-- / tab-inner -->
+		</div> <!-- / tab-painel -->
+
+			<!-- Tab Painel -->
+			<div class="tab-painel">
+			<input class="tab-open" id="tab-2" name="tab-wrap-1" type="radio">
+			<label class="tab-nav" for="tab-2">Sass</label>
+			<div class="tab-inner">
+			<!-- The basics
+			================================================== -->
+			<div class="the-basic">
+
+			<div class="title-container">
+				<h3 class="title-lv3">Baby steps</h3>
+
+				<p class="note">
+					<strong>Note:</strong>
+					To use the framework, you'll need to compile your style
+					with the Stylus preprocessor using NodeJS,
+					for more information see <a href="https://nodejs.org/" target="_blank" class="link-magenta"><strong>NodeJS</strong></a> and <a href="https://learnboost.github.io/stylus/" target="_blank" class="link-magenta"><strong>Stylus</strong></a>.
+				</p>
+
+				<h4 class="title-lv4">1 - Create you markup</h4>
+			</div>
+			<div class="code">
+
+<pre class="pre">
+<code>
+&lt;div class="<span class="featured">container</span>">
+  &lt;div class="<span class="featured">yellow-bar</span>">&lt;/div>
+  &lt;div class="<span class="featured">yellow-bar</span>">&lt;/div>
+&lt;/div>
+</code>
+</pre>
+			</div>
+
+			<div class="title-container">
+				<h4 class="title-lv4">2 - Import the framework</h4>
+			</div>
+
+			<div class="code">
+<pre class="pre">
+<code>
+@import <span class="featured">"flex-grid-framework"</span>
+</code>
+</pre>
+			</div>
+			<div class="title-container">
+				<h4 class="title-lv4">3 - Set your rows and columns</h4>
+			</div>
+
+			<div class="code">
+<pre class="pre">
+<code>
+.container
+  <span class="featured">@extend $row</span>
+
+.yellow-bar
+  <span class="featured">@extend $col-6</span>
+
+.yellow-bar
+  <span class="featured">@extend $col-6</span>
+
+</code>
+</pre>
+
+			</div> <!-- / code -->
+
+		<div class="demo-row">
+
+			<div class="yellow-bar-6"></div>
+			<div class="yellow-bar-6"></div>
+
+		</div>
+
+		</div> <!-- / the basic -->
+
+		<!-- Item features - cols
+		================================================== -->
+		<div class="item-feature">
+		<div class="title-container">
+			<h3 class="title-lv3">Items features</h3>
+			<h4 class="title-lv4">Choose your combination between 12 percentage based columns<br> and a 'flex'
+			column to fill in the remaining space.</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+
+.container
+  @extend $row
+
+.example-1
+  <span class="featured">@extend $col-1</span>
+
+.example-11
+  <span class="featured">@extend $col-11</span>
+
+.example-5
+  <span class="featured">@extend $col-5</span>
+
+.example-7
+  <span class="featured">@extend $col-7</span>
+
+.example-12
+  <span class="featured">@extend $col-12</span>
+
+.example-2
+  <span class="featured">@extend $col-2</span>
+
+.example-flex
+  <span class="featured">@extend $col-flex</span>
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row">
+
+			<div class="yellow-bar-1"></div>
+			<div class="yellow-bar-11"></div>
+			<div class="yellow-bar-5"></div>
+			<div class="yellow-bar-7"></div>
+			<div class="yellow-bar-12"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-flex"></div>
+
+		</div>
+
+				<!-- Item features - equal width columns
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4">Equal width columns</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+
+.example-flex
+  <span class="featured">@extend $col-flex</span>
+
+.example-flex
+  <span class="featured">@extend $col-flex</span>
+
+.example-flex
+  <span class="featured">@extend $col-flex</span>
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row">
+
+			<div class="yellow-bar-flex"></div>
+			<div class="yellow-bar-flex"></div>
+			<div class="yellow-bar-flex"></div>
+
+		</div>
+
+		<!-- Item features - offset
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4">Offsetting columns</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+
+.example-1
+  @extend $col-1
+
+.example-5
+  @extend $col-5
+  <span class="featured">@extend $offset-6</span>
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row">
+
+			<div class="yellow-bar-1"></div>
+			<div class="yellow-bar-5 offset-6"></div>
+
+		</div>
+
+		</div> <!-- / item features -->
+		<!-- Container features - side
+		================================================== -->
+		<div class="container-features">
+		<div class="title-container">
+			<h3 class="title-lv3">Container features</h3>
+			<h4 class="title-lv4">Choose your side</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+  <span class="featured">@extend $justify-left</span>
+
+.example-3
+  @extend $col-3
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-left">
+			<div class="yellow-bar-3"></div>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+  <span class="featured">@extend $justify-right</span>
+
+.example-3
+  @extend $col-3
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-right">
+			<div class="yellow-bar-3"></div>
+		</div>
+
+		<!-- Container features - Easily centralize
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4">Easily centralize</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+  <span class="featured">@extend $justify-center</span>
+
+.example-3
+  @extend $col-3
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-center">
+			<div class="yellow-bar-3"></div>
+		</div>
+
+		<!-- Container features - Justify content: between
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4">Justify content: between</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+  <span class="featured">@extend $justify-between</span>
+
+.example-2
+  @extend $col-2
+
+.example-2
+  @extend $col-2
+
+.example-2
+  @extend $col-2
+
+.example-2
+  @extend $col-2
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-between">
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+		</div>
+
+		<!-- Container features - Justify content: around
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4">Justify content: around</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+  <span class="featured">@extend $justify-around</span>
+
+.example-2
+  @extend $col-2
+
+.example-2
+  @extend $col-2
+
+.example-2
+  @extend $col-2
+
+.example-2
+  @extend $col-2
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row c-align-around">
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+			<div class="yellow-bar-2"></div>
+		</div>
+
+		<!-- Container features - Vertical align top
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4">Vertical align top</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+  <span class="featured">@extend $vertical-align-top</span>
+
+.example-6-big
+  @extend $col-6
+
+.example-6
+  @extend $col-6
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row v-align-top">
+			<div class="yellow-bar-6 big"></div>
+			<div class="yellow-bar-6"></div>
+		</div>
+
+		<!-- Container features - Vertical align middle
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4">Vertical align middle</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+  <span class="featured">@extend $vertical-align-middle</span>
+
+.example-6-big
+  @extend $col-6
+
+.example-6
+  @extend $col-6
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row v-align-middle">
+			<div class="yellow-bar-6 big"></div>
+			<div class="yellow-bar-6"></div>
+		</div>
+
+		<!-- Container features - Vertical align bottom
+		================================================== -->
+		<div class="title-container">
+			<h4 class="title-lv4">Vertical align bottom</h4>
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+  <span class="featured">@extend $vertical-align-bottom</span>
+
+.example-6-big
+  @extend $col-6
+
+.example-6
+  @extend $col-6
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row v-align-bottom">
+			<div class="yellow-bar-6 big"></div>
+			<div class="yellow-bar-6"></div>
+		</div>
+
+		</div><!-- / container features -->
+
+		<!-- Breakpoints
+		================================================== -->
+		<div class="breakpoint">
+
+		<div class="title-container">
+			<h4 class="title-lv3">Custom mixins for breakpoints</h4>
+
+			<p class="note">
+				<strong>Tip:</strong>
+				We have several special mixins to be used in Media Queries. Ensuring that we only rewrite the necessary properties.<a href="https://github.com/afonsopacifer/flex-grid-framework/blob/master/mq-mixins.md" target="_blank" class="link-magenta"> <strong>See the complete list.</strong></a>
+			</p>
+
+		</div>
+
+		<div class="code">
+<pre class="pre">
+<code>
+.container
+  @extend $row
+
+.example-x
+  @extend $col-3
+  @extend $offset-3
+
+.example-y
+  @extend $col-12
+
+<span class="featured">@media (max-width 811px)</span>
+  .example-x
+    <span class="featured">mq-col(12)</span>
+    <span class="featured">mq-offset(0)</span>
+
+  .example-y
+    <span class="featured">mq-col(12)</span>
+
+</code>
+</pre>
+
+		</div> <!-- / code -->
+
+		<div class="demo-row">
+			<div class="yellow-bar-x"></div>
+			<div class="yellow-bar-y"></div>
+		</div>
+
+		</div> <!-- / breakpoint -->
+
+		<!-- Support
+		================================================== -->
+		<div class="support">
+			<div class="title-container">
+				<h3 class="title-lv3">Browsers support</h3>
+				<p class="standard-paragraph">Verify in <a href="http://caniuse.com/#search=flexbox" class="link-magenta" target="_blank">Can I use</a> the browser support for the flex property</p>
+			</div>
+		</div>
+
+		<!-- Footer
+		================================================== -->
+		<footer class="footer-container">
+
+			<div class="footer">
+					<a href="https://github.com/afonsopacifer" target="_blank" class="link-white">Made with <span class="magenta">&#9829;</span> by Afonso Pacifer</a>
+			</div>
+
+		</footer>
+
+		</div> <!-- / tab-inner -->
+		</div> <!-- / tab-painel -->
+
+		</div> <!-- / Tab -->
 
 		<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
