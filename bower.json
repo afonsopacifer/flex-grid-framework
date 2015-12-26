@@ -5,7 +5,7 @@
   "authors": [
     "afonsopacifer <afonsopacifer@live.com>"
   ],
-  "description": "The Flex Semantic Grid focusing on performance for stylus.",
+  "description": "The Flex Semantic Grid focusing on performance for Stylus and Sass.",
   "main": "flex-grid-framework.styl",
   "keywords": [
     "[flexbox",

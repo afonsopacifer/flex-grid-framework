@@ -12,7 +12,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
 
 		<!-- Meta SEO -->
-		<meta name="description" content="The Flex Semantic Grid focusing on performance for stylus.">
+		<meta name="description" content="The Flex Semantic Grid focusing on performance for Stylus and Sass.">
 		<meta name="keywords" content="flexbox,grid,framework,css,gridsystem,stylus">
 		<meta name="robots" content="index,follow">
 
@@ -20,13 +20,13 @@
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@afonsopacifer">
 		<meta name="twitter:title" content="Flex Grid Framework">
-		<meta name="twitter:description" content="The Flex Semantic Grid focusing on performance for stylus.">
+		<meta name="twitter:description" content="The Flex Semantic Grid focusing on performance for Stylus and Sass.">
 		<meta name="twitter:image" content="http://flexgridframework.com/assets/img/logo.jpg">
 
 		<!-- Facebook Open Graph -->
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Flex Grid Framework">
-		<meta property="og:description" content="The Flex Semantic Grid focusing on performance for stylus.">
+		<meta property="og:description" content="The Flex Semantic Grid focusing on performance for Stylus and Sass.">
 		<meta property="og:url" content="http://flexgridframework.com/">
 		<meta property="og:image" content="http://flexgridframework.com/assets/img/logo.jpg">
 
@@ -48,7 +48,7 @@
 				</h1>
 
 				<h2 class="title-lv2">
-					The <a href="http://www.w3.org/TR/css3-flexbox/" target="_blank" class="link-magenta">Flex</a> Semantic Grid for <a href="https://learnboost.github.io/stylus/" target="_blank" class="link-magenta">Stylus</a>
+					The <a href="http://www.w3.org/TR/css3-flexbox/" target="_blank" class="link-magenta">Flex</a> Semantic Grid for <a href="https://learnboost.github.io/stylus/" target="_blank" class="link-magenta">Stylus</a> and <a href="http://sass-lang.com/" target="_blank" class="link-magenta">Sass</a>
 				</h2>
 
 			<div class="code-sh">
@@ -74,11 +74,19 @@ $ npm install <span class="featured">flex-grid-framework</span>
 
 			<div class="tab">
 
+			<!--
+			==================================================
+			==================================================
+			Stylus Docs
+			==================================================
+			==================================================
+			-->
+
 			<!-- Tab Painel -->
 			<div class="tab-painel">
 			<input class="tab-open" id="tab-1" name="tab-wrap-1" type="radio" checked>
 			<label class="tab-nav" for="tab-1">Stylus</label>
-			<div class="tab-inner">
+			<div class="tab-inner x">
 			<!-- The basics
 			================================================== -->
 			<div class="the-basic">
@@ -571,6 +579,15 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		</div> <!-- / tab-inner -->
 		</div> <!-- / tab-painel -->
 
+
+			<!--
+			==================================================
+			==================================================
+			Sass Docs
+			==================================================
+			==================================================
+			-->
+
 			<!-- Tab Painel -->
 			<div class="tab-painel">
 			<input class="tab-open" id="tab-2" name="tab-wrap-1" type="radio">
@@ -586,8 +603,8 @@ $ npm install <span class="featured">flex-grid-framework</span>
 				<p class="note">
 					<strong>Note:</strong>
 					To use the framework, you'll need to compile your style
-					with the Stylus preprocessor using NodeJS,
-					for more information see <a href="https://nodejs.org/" target="_blank" class="link-magenta"><strong>NodeJS</strong></a> and <a href="https://learnboost.github.io/stylus/" target="_blank" class="link-magenta"><strong>Stylus</strong></a>.
+					with the Sass preprocessor using Ruby or LibSass,
+					for more information see <a href="https://www.ruby-lang.org/en/" target="_blank" class="link-magenta"><strong>Ruby</strong></a> / <a href="http://sass-lang.com/libsass" target="_blank" class="link-magenta"><strong>LibSass</strong></a> and <a href="http://sass-lang.com/" target="_blank" class="link-magenta"><strong>Sass</strong></a>.
 				</p>
 
 				<h4 class="title-lv4">1 - Create you markup</h4>
@@ -611,7 +628,7 @@ $ npm install <span class="featured">flex-grid-framework</span>
 			<div class="code">
 <pre class="pre">
 <code>
-@import <span class="featured">"flex-grid-framework"</span>
+@import <span class="featured">"flex-grid-framework"</span>;
 </code>
 </pre>
 			</div>
@@ -622,15 +639,15 @@ $ npm install <span class="featured">flex-grid-framework</span>
 			<div class="code">
 <pre class="pre">
 <code>
-.container
-  <span class="featured">@extend $row</span>
-
-.yellow-bar
-  <span class="featured">@extend $col-6</span>
-
-.yellow-bar
-  <span class="featured">@extend $col-6</span>
-
+.container {
+  <span class="featured">@extend %row</span>;
+}
+.yellow-bar {
+  <span class="featured">@extend %col-6</span>;
+}
+.yellow-bar {
+  <span class="featured">@extend %col-6</span>;
+}
 </code>
 </pre>
 
@@ -657,31 +674,30 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-
-.container
-  @extend $row
-
-.example-1
-  <span class="featured">@extend $col-1</span>
-
-.example-11
-  <span class="featured">@extend $col-11</span>
-
-.example-5
-  <span class="featured">@extend $col-5</span>
-
-.example-7
-  <span class="featured">@extend $col-7</span>
-
-.example-12
-  <span class="featured">@extend $col-12</span>
-
-.example-2
-  <span class="featured">@extend $col-2</span>
-
-.example-flex
-  <span class="featured">@extend $col-flex</span>
-
+.container {
+  @extend %row;
+}
+.example-1 {
+  <span class="featured">@extend %col-1</span>;
+}
+.example-11 {
+  <span class="featured">@extend %col-11</span>;
+}
+.example-5 {
+  <span class="featured">@extend %col-5</span>;
+}
+.example-7 {
+  <span class="featured">@extend %col-7</span>;
+}
+.example-12 {
+  <span class="featured">@extend %col-12</span>;
+}
+.example-2 {
+  <span class="featured">@extend %col-2</span>;
+}
+.example-flex {
+  <span class="featured">@extend %col-flex</span>;
+}
 </code>
 </pre>
 
@@ -708,18 +724,18 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-
-.example-flex
-  <span class="featured">@extend $col-flex</span>
-
-.example-flex
-  <span class="featured">@extend $col-flex</span>
-
-.example-flex
-  <span class="featured">@extend $col-flex</span>
-
+.container {
+  @extend %row;
+}
+.example-flex {
+  <span class="featured">@extend %col-flex</span>;
+}
+.example-flex {
+  <span class="featured">@extend %col-flex</span>;
+}
+.example-flex {
+  <span class="featured">@extend %col-flex</span>;
+}
 </code>
 </pre>
 
@@ -742,16 +758,16 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-
-.example-1
-  @extend $col-1
-
-.example-5
-  @extend $col-5
-  <span class="featured">@extend $offset-6</span>
-
+.container {
+  @extend %row;
+}
+.example-1 {
+  @extend %col-1;
+}
+.example-5 {
+  @extend %col-5;
+  <span class="featured">@extend %offset-6</span>;
+}
 </code>
 </pre>
 
@@ -776,13 +792,13 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-  <span class="featured">@extend $justify-left</span>
-
-.example-3
-  @extend $col-3
-
+.container {
+  @extend %row;
+  <span class="featured">@extend %justify-left</span>;
+}
+.example-3 {
+  @extend %col-3;
+}
 </code>
 </pre>
 
@@ -795,13 +811,13 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-  <span class="featured">@extend $justify-right</span>
-
-.example-3
-  @extend $col-3
-
+.container {
+  @extend %row
+  <span class="featured">@extend %justify-right</span>;
+}
+.example-3 {
+  @extend %col-3;
+}
 </code>
 </pre>
 
@@ -820,13 +836,13 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-  <span class="featured">@extend $justify-center</span>
-
-.example-3
-  @extend $col-3
-
+.container {
+  @extend %row;
+  <span class="featured">@extend %justify-center</span>;
+}
+.example-3 {
+  @extend %col-3;
+}
 </code>
 </pre>
 
@@ -845,22 +861,22 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-  <span class="featured">@extend $justify-between</span>
-
-.example-2
-  @extend $col-2
-
-.example-2
-  @extend $col-2
-
-.example-2
-  @extend $col-2
-
-.example-2
-  @extend $col-2
-
+.container {
+  @extend %row;
+  <span class="featured">@extend %justify-between</span>;
+}
+.example-2 {
+  @extend %col-2;
+}
+.example-2 {
+  @extend %col-2;
+}
+.example-2 {
+  @extend %col-2;
+}
+.example-2 {
+  @extend %col-2;
+}
 </code>
 </pre>
 
@@ -882,22 +898,22 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-  <span class="featured">@extend $justify-around</span>
-
-.example-2
-  @extend $col-2
-
-.example-2
-  @extend $col-2
-
-.example-2
-  @extend $col-2
-
-.example-2
-  @extend $col-2
-
+.container {
+  @extend %row;
+  <span class="featured">@extend %justify-around</span>;
+}
+.example-2 {
+  @extend %col-2;
+}
+.example-2 {
+  @extend %col-2;
+}
+.example-2 {
+  @extend %col-2;
+}
+.example-2 {
+  @extend %col-2;
+}
 </code>
 </pre>
 
@@ -919,16 +935,16 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-  <span class="featured">@extend $vertical-align-top</span>
-
-.example-6-big
-  @extend $col-6
-
-.example-6
-  @extend $col-6
-
+.container {
+  @extend %row;
+  <span class="featured">@extend %vertical-align-top</span>;
+}
+.example-6-big {
+  @extend %col-6;
+}
+.example-6 {
+  @extend %col-6;
+}
 </code>
 </pre>
 
@@ -948,16 +964,16 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-  <span class="featured">@extend $vertical-align-middle</span>
-
-.example-6-big
-  @extend $col-6
-
-.example-6
-  @extend $col-6
-
+.container {
+  @extend %row;
+  <span class="featured">@extend %vertical-align-middle</span>;
+}
+.example-6-big {
+  @extend %col-6;
+}
+.example-6 {
+  @extend %col-6;
+}
 </code>
 </pre>
 
@@ -977,16 +993,16 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-  <span class="featured">@extend $vertical-align-bottom</span>
-
-.example-6-big
-  @extend $col-6
-
-.example-6
-  @extend $col-6
-
+.container {
+  @extend %row;
+  <span class="featured">@extend %vertical-align-bottom</span>;
+}
+.example-6-big {
+  @extend %col-6;
+}
+.example-6 {
+  @extend %col-6;
+}
 </code>
 </pre>
 
@@ -1016,24 +1032,25 @@ $ npm install <span class="featured">flex-grid-framework</span>
 		<div class="code">
 <pre class="pre">
 <code>
-.container
-  @extend $row
-
-.example-x
-  @extend $col-3
-  @extend $offset-3
-
-.example-y
-  @extend $col-12
-
-<span class="featured">@media (max-width 811px)</span>
-  .example-x
-    <span class="featured">mq-col(12)</span>
-    <span class="featured">mq-offset(0)</span>
-
-  .example-y
-    <span class="featured">mq-col(12)</span>
-
+.container {
+  @extend %row;
+}
+.example-x {
+  @extend %col-3;
+  @extend %offset-3;
+}
+.example-y {
+  @extend %col-12;
+}
+<span class="featured">@media (max-width: 811px)</span> {
+  .example-x {
+    <span class="featured">@include mq-col(12)</span>;
+    <span class="featured">@include mq-offset(0)</span>;
+  }
+  .example-y {
+    <span class="featured">@include mq-col(12)</span>;
+  }
+}
 </code>
 </pre>
 

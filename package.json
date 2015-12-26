@@ -1,7 +1,7 @@
 {
   "name": "flex-grid-framework",
   "version": "1.0.0",
-  "description": "The Flex Semantic Grid focusing on performance for stylus.",
+  "description": "The Flex Semantic Grid focusing on performance for Stylus and Sass.",
   "license": "MIT",
   "author": {
     "name": "Afonso Pacifer",
