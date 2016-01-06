@@ -1,5 +1,10 @@
 # Changelog
 
+## v 1.1.1
+- Fix margin-left bug in sass version
+
+> Thanks to [Leonardo Shinagawa](https://github.com/shina)
+
 ## v 1.1.0
 - Sass support :cupid:
 
