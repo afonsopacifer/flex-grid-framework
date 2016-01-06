@@ -127,7 +127,7 @@ $column_width: 7.29177%;
 
 // mixin
 @mixin mq-offset($number-of-offset) {
-  $margin-left ($number-of-offset * $column_width) + ((($number-of-offset - 1) * 2) * $margin) + (3 * $margin);
+  margin-left: ($number-of-offset * $column_width) + ((($number-of-offset - 1) * 2) * $margin) + (3 * $margin);
 }
 
 // extends the mixin :)
