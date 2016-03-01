@@ -1,5 +1,10 @@
 # Changelog
 
+## v 1.2.0
+- Universal selector for `box-sizing` removed
+
+> Thanks to [Alexey Taktarov](https://github.com/molefrog)
+
 ## v 1.1.1
 - Fix margin-left bug in sass version
 

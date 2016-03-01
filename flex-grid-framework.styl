@@ -8,7 +8,7 @@ Website:
 http://flexgridframework.com/
 Author:
 Afonso Pacifer (afonsopacifer.com)
-Version: 1.1.1
+Version: 1.2.0
 Licence:
 MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.md
 * /
@@ -22,11 +22,6 @@ column_width = 7.29177%
 $margin
     margin-right margin
     margin-left margin
-
-/* Box Model
-------------------------------------------------*/
-*
-  box-sizing border-box
 
 /* Row
 ------------------------------------------------*/
@@ -42,6 +37,7 @@ $row
     -webkit-flex-wrap wrap
     -ms-flex-wrap wrap
     flex-wrap wrap
+    box-sizing border-box
 
 /* Columns
 ------------------------------------------------*/
@@ -59,6 +55,7 @@ col(number-of-cols)
         flex auto
 
     @extend $margin
+    box-sizing border-box
 
 // extends the mixin :)
 $col-flex
