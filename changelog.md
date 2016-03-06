@@ -1,5 +1,11 @@
 # Changelog
 
+## v 1.2.1
+- Allow the user to define it's own variable values (column and margin width) before including the file.
+- Fix Sass `$max-width` variable
+
+> Thanks to [FrontDevs](https://github.com/FrontDevs) and [Alexis BRENON](https://github.com/AlexisBRENON)
+
 ## v 1.2.0
 - Universal selector for `box-sizing` removed
 
