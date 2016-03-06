@@ -30,7 +30,7 @@ $column_width: 7.29177% !default;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: max-width;
+  max-width: $max-width;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
