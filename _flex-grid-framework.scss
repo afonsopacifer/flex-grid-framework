@@ -15,9 +15,9 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Configs
 ------------------------------------------------*/
-$max-width: 1200px;
-$margin: 0.52083%;
-$column_width: 7.29177%;
+$max-width: 1200px !default;
+$margin: 0.52083% !default;
+$column_width: 7.29177% !default;
 
 %margin {
   margin-right: $margin;
