@@ -68,41 +68,9 @@ col(number-of-cols)
 $col-flex
     col(flex)
 
-$col-1
-    col(1)
-
-$col-2
-    col(2)
-
-$col-3
-    col(3)
-
-$col-4
-    col(4)
-
-$col-5
-    col(5)
-
-$col-6
-    col(6)
-
-$col-7
-    col(7)
-
-$col-8
-    col(8)
-
-$col-9
-    col(9)
-
-$col-10
-    col(10)
-
-$col-11
-    col(11)
-
-$col-12
-    col(12)
+for i in (1..flx-column_number)
+    $col-i
+        col(i)
 
 // for media queries
 mq-col(number-of-cols)
@@ -116,41 +84,9 @@ mq-offset(number-of-offset = 0)
     margin-left (number-of-offset * flx-column_width) + (((number-of-offset - 1) * 2) * flx-margin) + (3 * flx-margin)
 
 // extends the mixin :)
-$offset-0
-    mq-offset()
-
-$offset-1
-    mq-offset(1)
-
-$offset-2
-    mq-offset(2)
-
-$offset-3
-    mq-offset(3)
-
-$offset-4
-    mq-offset(4)
-
-$offset-5
-    mq-offset(5)
-
-$offset-6
-    mq-offset(6)
-
-$offset-7
-    mq-offset(7)
-
-$offset-8
-    mq-offset(8)
-
-$offset-9
-    mq-offset(9)
-
-$offset-10
-    mq-offset(10)
-
-$offset-11
-    mq-offset(11)
+for i in (0..(flx-column_number - 1))
+    $offset-i
+        mq-offset(i)
 
 /* Flex Container
 ------------------------------------------------*/
