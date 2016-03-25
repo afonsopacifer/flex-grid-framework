@@ -15,19 +15,25 @@ MIT - https://github.com/afonsopacifer/flex-grid-framework/blob/master/licence.m
 
 /* Configs
 ------------------------------------------------*/
-max-width = 1200px
-margin = 0.52083%
-column_width = 7.29177%
+flx-max-width = 1200px
+flx-margin = 0.52083%
+flx-padding = 0
+flx-column_number = 12
+flx-column_width = (100% / flx-column_number) - 2 * flx-margin
 
 $margin
-    margin-right margin
-    margin-left margin
+    margin-right flx-margin
+    margin-left flx-margin
+
+$padding
+    padding-right flx-padding
+    padding-left flx-padding
 
 /* Row
 ------------------------------------------------*/
 $row
-    margin-left auto
-    margin-right auto
+    margin-left -1 * flx-padding
+    margin-right -1 * flx-padding
     width 100%
     max-width max-width
     display -webkit-box
@@ -45,7 +51,7 @@ $row
 // mixin
 col(number-of-cols)
     if (number-of-cols is a 'unit')
-        width (number-of-cols * column_width) + (((number-of-cols - 1) * 2) * margin)
+        width (number-of-cols * flx-column_width) + (((number-of-cols - 1) * 2) * flx-margin)
 
     if (number-of-cols == flex)
         -webkit-box-flex auto
@@ -55,6 +61,7 @@ col(number-of-cols)
         flex auto
 
     @extend $margin
+    @extend $padding
     box-sizing border-box
 
 // extends the mixin :)
@@ -99,14 +106,14 @@ $col-12
 
 // for media queries
 mq-col(number-of-cols)
-    width (number-of-cols * column_width) + (((number-of-cols - 1) * 2) * margin)
+    width (number-of-cols * flx-column_width) + (((number-of-cols - 1) * 2) * flx-margin)
 
 /* Offset
 ------------------------------------------------*/
 
 // mixin
 mq-offset(number-of-offset = 0)
-    margin-left (number-of-offset * column_width) + (((number-of-offset - 1) * 2) * margin) + (3 * margin)
+    margin-left (number-of-offset * flx-column_width) + (((number-of-offset - 1) * 2) * flx-margin) + (3 * flx-margin)
 
 // extends the mixin :)
 $offset-0
