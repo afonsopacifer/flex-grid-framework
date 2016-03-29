@@ -35,7 +35,6 @@ $flx-column_width: (100%/$flx-column_number) - 2*$flx-margin !default;
 %row {
   margin-left: -$flx-padding;
   margin-right: -$flx-padding;
-  width: 100%;
   max-width: $flx-max-width;
   display: -webkit-box;
   display: -webkit-flex;
