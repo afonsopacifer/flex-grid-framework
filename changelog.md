@@ -1,9 +1,9 @@
 # Changelog
 
-## v 1.3.1
+## v 1.3.0
 - Add more customization variables
 
-> [Alexis BRENON](https://github.com/AlexisBRENON)
+> Thanks to [Alexis BRENON](https://github.com/AlexisBRENON)
 
 ## v 1.2.1
 - Allow the user to define it's own variable values (column and margin width) before including the file.
