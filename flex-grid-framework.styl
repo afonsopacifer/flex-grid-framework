@@ -34,7 +34,7 @@ $padding
 $row
     margin-left -1 * flx-padding
     margin-right -1 * flx-padding
-    max-width max-width
+    max-width flx-max-width
     display -webkit-box
     display -webkit-flex
     display -ms-flexbox
@@ -68,7 +68,7 @@ $col-flex
     col(flex)
 
 for i in (1..flx-column_number)
-    $col-i
+    $col-{i}
         col(i)
 
 // for media queries
