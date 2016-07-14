@@ -8,6 +8,7 @@
     "email": "afonsopacifer@live.com",
     "url": "http://afonsopacifer.com"
   },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/afonsopacifer/flex-grid-framework"
